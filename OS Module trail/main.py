@@ -1,6 +1,6 @@
-import os
-#check the existence of a file or directory
+#import os
 
+#check the existence of a file or directory
 # if (not os.path.exists("Data")):
 #     os.mkdir("Data")
 
