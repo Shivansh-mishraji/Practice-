@@ -33,3 +33,5 @@ print(f"Percentage : {perc}")
 print(f"Grade : {grade}")
 if perc >= 75:
     print( "Passed with Distinction ")
+else :
+    print("Fail")
