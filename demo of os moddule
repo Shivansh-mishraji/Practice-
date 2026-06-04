@@ -1,3 +1,4 @@
+# A demonstration script for various OS module operations
 #import os
 
 #check the existence of a file or directory
