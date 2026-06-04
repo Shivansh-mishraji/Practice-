@@ -43,4 +43,4 @@ def readfile(filename):
                 total_sum +=cleaned
         print(total_sum)
 name = input("Enter file Name : ")
-readfile(name)
+readfile(name) 
