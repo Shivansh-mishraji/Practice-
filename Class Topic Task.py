@@ -1,3 +1,4 @@
+# Script containing various Object-Oriented Programming tasks and examples
 # # # """Level 1: The Basics (Syntax, Instance Attributes, and Methods)
 # # # 
 # # # Task: The Digital Library
