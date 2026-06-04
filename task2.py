@@ -1,3 +1,4 @@
+# Script for parsing data files and handling exceptions during type conversion
 
 """Phase 2: Intermediate (Data Parsing and Type Handling)
 Now, let's introduce messy data that causes internal crashes.
