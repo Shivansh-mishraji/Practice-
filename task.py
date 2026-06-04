@@ -1,3 +1,4 @@
+# Script for basic file operations: reading and writing text files
 """Phase 1: The Basics (Read, Write, and Missing Files)
 Start by handling basic file operations and the most common file error.
 The Task: Create a script that attempts to open a file called raw_data.txt and read its contents. Write those contents into a new file called processed_data.txt.
