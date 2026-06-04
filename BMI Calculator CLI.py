@@ -1,3 +1,4 @@
+# A simple CLI program to calculate Body Mass Index (BMI)
 print("=" * 10 + " BMI Calculator " + 10 * "=")
 while True:
     try:
