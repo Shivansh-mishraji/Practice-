@@ -29,3 +29,4 @@ for folder in folders:
 #remove multiple files
 # for i in range(0,20):         
 #     os.remove(f"Data/File {i+1}.txt")
+ 
