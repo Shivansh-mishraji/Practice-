@@ -1,3 +1,4 @@
+# A script to calculate student grades based on marks in different subjects
 subjects = ["English","Hindi","Maths","Science","Arts"]
 marks = {}
 total = 0
