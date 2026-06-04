@@ -1,3 +1,4 @@
+# Practice script for basic Numpy operations like mean, variance, and reshape
 # Load library
 import numpy as np
 # Create matrix
