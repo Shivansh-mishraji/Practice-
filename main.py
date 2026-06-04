@@ -1,3 +1,4 @@
+# Main script to list files and folders in the current directory using pathlib
 from pathlib import Path
 
 def readfileandfolder():
