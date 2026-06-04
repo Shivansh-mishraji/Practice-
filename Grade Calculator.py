@@ -1,3 +1,11 @@
+"""
+=================================================================
+ 🚀 File: Grade Calculator.py
+ ✨ Purpose: Advanced Machine Learning Operations and Processing
+ 📅 Last Updated: 2026
+=================================================================
+"""
+
 # A script to calculate student grades based on marks in different subjects
 subjects = ["English","Hindi","Maths","Science","Arts"]
 marks = {}
