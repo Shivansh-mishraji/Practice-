@@ -1,3 +1,11 @@
+"""
+=================================================================
+ 🚀 File: Class Topic Task.py
+ ✨ Purpose: Advanced Machine Learning Operations and Processing
+ 📅 Last Updated: 2026
+=================================================================
+"""
+
 # Script containing various Object-Oriented Programming tasks and examples
 # # # """Level 1: The Basics (Syntax, Instance Attributes, and Methods)
 # # # 
@@ -10,14 +18,23 @@
 # # # Instantiate at least two different Book objects and test their methods."""
 
 # # # class Book:
-# # #     def __init__(self,title,author,pages):
+# # #     # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self,title,author,pages):
 # # #         self.title = title
 # # #         self.author = author
 # # #         self.pages = pages
-# # #     def read_pages(self,page):
+# # #     # ==================================================
+# Function Definition
+# ==================================================
+def read_pages(self,page):
 # # #         self.pages -= page
         
-# # #     def status(self):
+# # #     # ==================================================
+# Function Definition
+# ==================================================
+def status(self):
 # # #         print(f"The total number of pages left are {self.pages}")
 
 # # # obj1 = Book("Maths","Ramanujan",100)
@@ -44,20 +61,32 @@
 
 # # class BankAccount:
 # #     bank_name = "Python first National"
-# #     def __init__(self,account_holder_name,balance):
+# #     # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self,account_holder_name,balance):
 # #         self.account_holder_name = account_holder_name
 # #         self.__balance = balance
     
-# #     def deposit(self,amount):
+# #     # ==================================================
+# Function Definition
+# ==================================================
+def deposit(self,amount):
 # #         self.__balance += amount
 # #         print(f"Your Amount {amount} has been deposited . Your current Balance is {self.__balance}")
-# #     def withdraw(self,amount):
+# #     # ==================================================
+# Function Definition
+# ==================================================
+def withdraw(self,amount):
 # #         if amount > self.__balance:
 # #             print("Error! Insufficient Balance .")
 # #         else:
 # #             self.__balance -= amount
 # #             print(f"Your Amount {amount} has been Withdrawed . Your current Balance is {self.__balance}")
-# #     def __str__(self):
+# #     # ==================================================
+# Function Definition
+# ==================================================
+def __str__(self):
 # #         return f"Account: {self.account_holder_name}, Bank: {self.bank_name}, Balance: ${self.__balance}"
 
 # # obj3 = BankAccount("Ajay",5000)
@@ -79,31 +108,52 @@
 # Use a @staticmethod called is_workday that takes a day of the week (e.g., "Monday") and returns True if it's a weekday and False if it's the weekend."""
 
 # class Employee:
-#     def __init__(self,attributes_names,base_salary):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self,attributes_names,base_salary):
 #         self.attributes_names = attributes_names
 #         self.base_salary = base_salary
-#     def calculate_bonus(self):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def calculate_bonus(self):
 #         return f"Calculated  Bonus on Base Salary : {self.base_salary*0.1}"  
 #     @classmethod
-#     def from_string(cls,name):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def from_string(cls,name):
 #         attribute_name,base_salary = name.split("-")
 #         return cls(attribute_name,int(base_salary))
 #     @staticmethod
-#     def is_workday(day):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def is_workday(day):
 #         weekend = ["Saturday","Sunday"]
 #         if day in weekend:
 #             return False
 #         else:    
 #             return True
 # class Developer(Employee):
-#     def __init__(self,attributes_names,programming_language,base_salary):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self,attributes_names,programming_language,base_salary):
 #         super().__init__(attributes_names,base_salary)
 #         self.programming_language = programming_language
 # class Manager(Employee):
-#     def __init__(self,attributes_names,team_size,base_salary):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self,attributes_names,team_size,base_salary):
 #         super().__init__(attributes_names,base_salary)
 #         self.team_size = team_size       
-#     def calculate_bonus(self):
+#     # ==================================================
+# Function Definition
+# ==================================================
+def calculate_bonus(self):
 #         return f"Calculated  Bonus on Base Salary : {self.base_salary*0.2}"  
 """Level 4: Expert (Abstract Base Classes, Mixins, and Properties)
 Task: The Modern Zoo Ecosystem
@@ -120,43 +170,67 @@ from abc import ABC, abstractmethod
 class Animal(ABC):
 
     @abstractmethod
-    def make_sound(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def make_sound(self):
         pass
 
 
 class SwimmerMixin:
-    def swim(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def swim(self):
         print(f"{self.__class__.__name__} is swimming.")
 
 
 class FlyerMixin:
-    def fly(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def fly(self):
         print(f"{self.__class__.__name__} is flying.")
 
 
 class Penguin(Animal, SwimmerMixin):
 
-    def __init__(self, health_score):
+    # ==================================================
+# Function Definition
+# ==================================================
+def __init__(self, health_score):
         self.health_score = health_score
 
     @property
-    def health_score(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def health_score(self):
         return self._health_score
 
     @health_score.setter
-    def health_score(self, value):
+    # ==================================================
+# Function Definition
+# ==================================================
+def health_score(self, value):
         if 0 <= value <= 100:
             self._health_score = value
         else:
             raise ValueError("Health score must be between 0 and 100.")
 
-    def make_sound(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def make_sound(self):
         print("Penguin says: Honk!")
 
 
 class Duck(Animal, SwimmerMixin, FlyerMixin):
 
-    def make_sound(self):
+    # ==================================================
+# Function Definition
+# ==================================================
+def make_sound(self):
         print("Duck says: Quack!")
 
 penguin = Penguin(85)
