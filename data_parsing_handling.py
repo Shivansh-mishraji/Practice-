@@ -17,9 +17,6 @@ Introduce the else block (runs only if the try block succeeds) to write to the c
 The Goal: The script processes the entire file. Valid rows are saved, and whenever a ValueError triggers, the exact row and a custom error message are logged into the error file without stopping the loop."""
 
 
-# ==================================================
-# Function Definition
-# ==================================================
 def readfile(filename):
     try:
         with open(f"{filename}.txt","r") as f:

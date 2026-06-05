@@ -15,9 +15,6 @@ Try-Except Focus: Wrap your opening logic in a try-except block to catch a FileN
 The Goal: If raw_data.txt doesn't exist, your script shouldn't crash with a giant red error traceback. Instead, it should politely print: "Error: The target dataset could not be found. Please check the directory."""
 
 
-# ==================================================
-# Function Definition
-# ==================================================
 def createfile(new,data):
     try:
         with open (f"{new}.txt" , "x") as file:
@@ -27,9 +24,6 @@ def createfile(new,data):
     else:
         print("File created and written succcessfully.")
 
-# ==================================================
-# Function Definition
-# ==================================================
 def readfile(): 
 
     file = input(" Enter file name to read : ")
