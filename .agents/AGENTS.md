@@ -31,11 +31,11 @@
 - [x] Built: `inventory.py` (Inventory Management System)
 - [x] Built: `bank.py` (BankAccount with @property validation)
 
-### In Progress
-- [ ] Decorators (`@timer`, `@validate_positive`, `functools.wraps`, `*args/**kwargs`)
-
-### Not Yet Started
-- [ ] Closures and scope (LEGB, nonlocal)
+- [x] Decorators (`@timer`, `@validate_positive`, `functools.wraps`, `*args/**kwargs`)
+- [x] Built: `inventory.py` (Inventory Management System)
+- [x] Built: `bank.py` (BankAccount with @property validation)
+- [x] Built: `decorators.py` (Custom timing and validation decorators)
+- [x] Built: `vault.py` (Secure Vault & Transaction System)
 - [ ] Generators and lazy evaluation
 - [ ] Type hints (`Optional`, `Union`, `Callable`)
 - [ ] File handling and pathlib
