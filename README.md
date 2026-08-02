@@ -1,43 +1,46 @@
 # Python Learning Journey 🚀
 
-Welcome to my Python practice repository! This collection showcases my progress and learning journey through various Python programming concepts, from basic scripting to data science libraries.
+Welcome to my Python learning journey repository! This codebase tracks my progress as I build production-quality Python backend systems from scratch without copy-pasting or vibe-coding.
 
-## 📂 Repository Contents
+---
 
-### 🐍 Python CLI Applications
-Interactive command-line applications that demonstrate basic programming logic, loops, conditional statements, and error handling:
-- **`bmi_calculator.py`**: A CLI program to calculate Body Mass Index (BMI) and categorize health status.
-- **`grade_calculator.py`**: Calculates student grades and percentages based on subject marks.
-- **`oop_class_tasks.py`**: Exercises demonstrating Object-Oriented Programming (OOP) concepts in Python.
+## 🎯 Active Sprint: Stage 1 — Python Core
 
-### 📁 System & File Handling
-Scripts dealing with the OS and file system operations:
-- **`file_handling_basics.py`**: Demonstrates reading from and writing to files.
-- **`data_parsing_handling.py`**: Shows how to handle and parse different data formats.
-- **`demo_os_module.py`**: Examples of using the Python `os` module for system interactions.
-- **`list_files_demo.py`**: A utility to list files within directories.
+Located in [`Stage-1/`](file:///c:/Users/91727/Desktop/Library-Practice/Stage-1):
 
-### 📊 Data Science Notebooks
-Jupyter Notebooks exploring popular Python data science and visualization libraries:
-- **`numpy_practice.ipynb`**: Practice with NumPy for numerical computing and array operations.
-- **`pandas_practice.ipynb`**: Data manipulation and analysis using Pandas.
-- **`matplotlib_practice.ipynb`**: Creating static, animated, and interactive visualizations with Matplotlib.
-- **`seaborn_practice.ipynb`**: Statistical data visualization using Seaborn.
+- **`catalog.py`**: Smart Product Catalog system implementing private state (`_price`, `_discount`), `@property` getters, setters with `ValueError` validation, and read-only computed properties (`final_price`).
+- **`vault.py`**: Secure Vault & Transaction system integrating OOP, private fields, custom decorators, and exception handling.
+- **`decorators.py`**: Custom execution timer (`@timer`) and argument validator (`@validate_positive`) using `functools.wraps` and `*args/**kwargs`.
+- **`bank.py`**: `BankAccount` class demonstrating `@property` validation, private state protection, and overdraft safety checks.
+- **`inventory.py`**: CLI-based Inventory Management System with `@dataclass`, magic methods (`__repr__`, `__len__`), category filtering, and restocking alerts.
+
+---
+
+## 📁 Repository Structure
+
+```
+Python-Learning-Journey/
+├── .agents/                    # Workspace mentor rules & progress tracking
+├── Stage-1/                    # Active Sprint: Python Core modules
+│   ├── catalog.py              # Product Catalog (@property getter/setter/read-only)
+│   ├── vault.py                # Secure Vault Capstone
+│   ├── decorators.py           # Custom timing & validation decorators
+│   ├── bank.py                 # Bank Account property validation
+│   ├── inventory.py            # Inventory System (@dataclass, CLI)
+│   └── Topics.md               # Stage 1 Syllabus
+└── archive/                    # Archived legacy practice scripts & notebooks
+    ├── legacy_scripts/
+    └── legacy_notebooks/
+```
+
+---
 
 ## 🚀 How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shivansh-mishraji/Practice-.git
-   ```
-2. For Python scripts, run them directly via the terminal. Some scripts are interactive and will prompt you for input:
-   ```bash
-   python bmi_calculator.py
-   ```
-3. For Data Science notebooks, start Jupyter Notebook or Jupyter Lab:
-   ```bash
-   jupyter notebook
-   ```
+Run any module directly from the repository root:
 
----
-*This repository serves as a personal archive of Python exercises and data science practice.*
+```bash
+python Stage-1/catalog.py
+python Stage-1/vault.py
+python Stage-1/inventory.py
+```

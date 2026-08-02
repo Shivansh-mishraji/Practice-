@@ -36,6 +36,7 @@
 - [x] Built: `bank.py` (BankAccount with @property validation)
 - [x] Built: `decorators.py` (Custom timing and validation decorators)
 - [x] Built: `vault.py` (Secure Vault & Transaction System)
+- [x] Built: `catalog.py` (Smart Product Catalog with @property validation)
 - [ ] Generators and lazy evaluation
 - [ ] Type hints (`Optional`, `Union`, `Callable`)
 - [ ] File handling and pathlib
