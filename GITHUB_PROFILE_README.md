@@ -68,18 +68,23 @@ Full stack: FastAPI · PostgreSQL · Gemini API · ChromaDB · Docker · GitHub 
 
 <div align="center">
 
-![Stats](https://github-readme-stats.vercel.app/api?username=Shivansh-mishraji&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&count_private=true)
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Shivansh-mishraji&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF)
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=Shivansh-mishraji&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&count_private=true&cache_seconds=1800" alt="stats"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shivansh-mishraji&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&cache_seconds=1800" alt="languages"/>
 
-![Streak](https://streak-stats.demolab.com/?user=Shivansh-mishraji&theme=tokyonight&hide_border=true&background=0d1117&stroke=58A6FF&ring=58A6FF&fire=FF6B35&currStreakLabel=58A6FF)
+<img src="https://streak-stats.demolab.com/?user=Shivansh-mishraji&theme=tokyonight&hide_border=true&background=0d1117&stroke=58A6FF&ring=58A6FF&fire=FF6B35&currStreakLabel=58A6FF" alt="streak"/>
 
-![Activity](https://github-readme-activity-graph.vercel.app/graph?username=Shivansh-mishraji&theme=tokyo-night&bg_color=0d1117&color=58A6FF&line=58A6FF&point=FF6B35&area=true&hide_border=true)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shivansh-mishraji&theme=tokyo-night&bg_color=0d1117&color=58A6FF&line=58A6FF&point=FF6B35&area=true&hide_border=true" width="100%" alt="activity"/>
 
 </div>
 
 ---
 
 ## 🐍 Contribution Snake
+
+> **One-time setup needed** — Run this in your `Shivansh-mishraji` profile repo:
+> 1. Add [`.github/workflows/snake.yml`](https://github.com/Shivansh-mishraji/Python-Learning-Journey/blob/main/snake-workflow.yml) to your profile repo
+> 2. Go to **Actions tab → Generate Contribution Snake → Run workflow**
+> 3. Snake appears automatically after first run — then this section renders correctly
 
 <div align="center">
   <picture>
