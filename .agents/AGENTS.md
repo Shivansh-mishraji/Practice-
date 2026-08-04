@@ -47,11 +47,13 @@
 - [x] Built: `catalog.py` (Smart Product Catalog with @property validation)
 - [x] Built: `practice.py` (BankAccount rebuilt from blank slate — PROOF of real understanding)
 - [x] Interview drills: RateLimiter, require_auth, APIResponse — all passed
-- [ ] **ACTIVE: DSA — 1 LeetCode Easy per day (start today)**
-- [ ] Generators and lazy evaluation
+- [x] Generators (`yield`, lazy evaluation, generator chaining, `continue` guard pattern)
+- [x] Built: `generator.py` (Lazy Log Stream Pipeline — 3 chained generators)
+- [x] DSA Day 1: Two Sum solved using HashMap O(n)
+- [ ] **ACTIVE: DSA — 1 LeetCode Easy per day**
 - [ ] Type hints (`Optional`, `Union`, `Callable`)
-- [ ] File handling and pathlib
 - [ ] SQL (intermediate → advanced: joins, window functions)
+- [ ] File handling and pathlib
 - [ ] FastAPI (fill gaps: DI, middleware, auth, pagination)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
