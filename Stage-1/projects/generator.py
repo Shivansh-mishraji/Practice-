@@ -36,6 +36,9 @@ if __name__ == "__main__":
     stream = read_log_stream(raw_logs)
     errors = filter_errors(stream)
     parsed = parse_log_entry(errors)
+    
 
     for entry in parsed:
         print(entry)
+
+    

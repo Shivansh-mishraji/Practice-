@@ -10,11 +10,11 @@
 
 | Concept | File | Key Pattern |
 |:---|:---|:---|
-| OOP + `__repr__` + `__len__` | `inventory.py`, `Assessment/OOPs.py` | Class design, dunder methods |
-| `@property` getter/setter | `bank.py`, `catalog.py`, `practice.py` | Private state, validation |
-| Exception handling | `vault.py`, `Assessment/Exceptions.py` | `raise ValueError`, custom exceptions |
-| Decorators + closures | `decorators.py`, `Assessment/Decorators.py` | `@wraps`, `*args/**kwargs`, closures |
-| Generators + `yield` | `generator.py` | Lazy evaluation, generator chaining |
+| OOP + `__repr__` + `__len__` | `projects/inventory.py`, `assessment/OOPs.py` | Class design, dunder methods |
+| `@property` getter/setter | `projects/bank.py`, `projects/catalog.py` | Private state, validation |
+| Exception handling | `projects/vault.py`, `assessment/Exceptions.py` | `raise ValueError`, custom exceptions |
+| Decorators + closures | `practice/decorators.py`, `assessment/Decorators.py` | `@wraps`, `*args/**kwargs`, closures |
+| Generators + `yield` | `projects/generator.py` | Lazy evaluation, generator chaining |
 | DSA fundamentals | `DSA/two-sum.py` | HashMap O(n) pattern |
 
 ---
@@ -37,21 +37,30 @@
 
 ```
 Stage-1/
-├── Assessment/         # Self-assessment files with review comments
-│   ├── Decorators.py
-│   ├── Exceptions.py
-│   ├── OOPs.py
-│   └── Properties.py
-├── DSA/                # Daily DSA practice
-│   └── two-sum.py
-├── bank.py             # BankAccount with @property validation
-├── catalog.py          # Smart Product Catalog
-├── decorators.py       # Custom timing and validation decorators
-├── generator.py        # Lazy Log Stream Pipeline (3 chained generators)
-├── interview_drills.py # Interview micro-tasks
-├── interview_hard.py   # Advanced interview challenge (attempted)
-├── inventory.py        # Inventory Management System
-├── practice.py         # BankAccount rebuilt from blank slate
-├── vault.py            # Secure Vault & Transaction System
-└── README.md           # This file
+├── README.md               # This file
+├── Topics.md               # Detailed topic notes
+│
+├── projects/               # Main project files (graded tasks)
+│   ├── inventory.py        # Inventory Management System
+│   ├── bank.py             # BankAccount with @property validation
+│   ├── vault.py            # Secure Vault & Transaction System
+│   ├── catalog.py          # Smart Product Catalog
+│   └── generator.py        # Lazy Log Stream Pipeline (3 chained generators)
+│
+├── practice/               # Practice & skill-building
+│   ├── decorators.py       # Custom timing and validation decorators
+│   └── practice.py         # BankAccount rebuilt from blank slate
+│
+├── interview/              # Interview preparation
+│   ├── interview_drills.py # Micro-tasks (RateLimiter, require_auth, APIResponse)
+│   └── interview_hard.py   # Advanced challenge (attempted, reset to micro-tasks)
+│
+├── Assessment/             # Self-assessment with review comments
+│   ├── OOPs.py             # OOP concepts assessment
+│   ├── Properties.py       # @property + @dataclass assessment
+│   ├── Exceptions.py       # Exception handling assessment
+│   └── Decorators.py       # Decorators + closures assessment
+│
+└── DSA/                    # Daily DSA practice
+    └── two-sum.py          # Day 1: Two Sum — HashMap O(n)
 ```
