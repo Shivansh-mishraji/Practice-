@@ -2,7 +2,7 @@
 # Applies to all AI interactions in this workspace.
 # ⚡ AUTO-UPDATING: This file is automatically updated by the AI mentor after every session
 #    based on observed patterns, new decisions, and Shivansh's innovative ideas.
-#    Last updated: 2026-08-03
+#    Last updated: 2026-08-08
 
 ---
 
@@ -12,18 +12,18 @@
 |:---|:---|
 | Name | Shivansh Mishra |
 | Year | 3rd Year B.Tech CSE (Cloud Computing & ML) |
+| Target Role | Backend AI Engineer / Software Engineer with AI (Global Competency) |
+| Standard | **High-Salary & Global Standard**: Must be capable of competing globally with top 15% engineers. |
 | Deadline | First internship within 2–3 months (ASAP) |
 | Daily time | 1–2 hrs weekdays, more on weekends (~15 hrs/week) |
-| Target role | Backend AI Engineering (highest paying fresher role) |
-| Backup role | Backend Python Developer (FastAPI + PostgreSQL) — same project, zero extra work |
-| Target company | Any company with good pay — open to startups, product cos |
-| Python level | Intermediate+ — OOP/property mastered, generators next |
+| Backup role | Backend Python Developer (FastAPI + PostgreSQL) — same stack, zero extra work |
+| Python level | Intermediate+ — OOP, properties, decorators, generators mastered |
 | SQL | Intermediate |
-| FastAPI | Intermediate (surface-level, vibe-coded — counts as 0 real depth) |
-| AI tools | Antigravity (primary), GitHub Copilot (occasional) |
-| Projects done | Zero complete projects before this program |
-| Applications sent | Zero — deliberately upskilling first |
-| DSA status | NOT started — critical gap, must do 1 LeetCode Easy/day starting now |
+| FastAPI | Intermediate (filling architectural depth gaps now) |
+| AI tools | Antigravity (primary mentor/co-founder), GitHub Copilot (occasional) |
+| Project Strategy | AI Resume & JD Analyzer will be built in a **separate repository**. Learning repo focuses on mastering foundation & backend architecture step-by-step. |
+| Applications sent | Zero — deliberately upskilling to hit high salary bar first |
+| DSA status | Active — 1 LeetCode Easy/day to clear initial technical screens |
 
 ---
 
@@ -50,11 +50,11 @@
 - [x] Generators (`yield`, lazy evaluation, generator chaining, `continue` guard pattern)
 - [x] Built: `generator.py` (Lazy Log Stream Pipeline — 3 chained generators)
 - [x] DSA Day 1: Two Sum solved using HashMap O(n)
-- [ ] **ACTIVE: DSA — 1 LeetCode Easy per day**
-- [ ] Type hints (`Optional`, `Union`, `Callable`)
+- [x] Stage 1 Self-Assessments (OOPs, Properties, Exceptions, Decorators)
+- [x] Type hints (`Optional`, `Union`, `Callable`, `dict[str, Any]`)
+- [ ] **ACTIVE: Stage 2 — File I/O + pathlib + Context Managers**
 - [ ] SQL (intermediate → advanced: joins, window functions)
-- [ ] File handling and pathlib
-- [ ] FastAPI (fill gaps: DI, middleware, auth, pagination)
+- [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
 - [ ] Docker + docker-compose
@@ -84,8 +84,8 @@ Agent MUST use these to calibrate every session.
 
 ### Personality / Motivation Signals
 - Highly strategic thinker — asks big-picture career questions, not just "how do I fix this?"
+- High ambition — demands global standards, wants high-paying roles, not just any basic job
 - Honest self-assessor — said "I was just blindly following" without being asked
-- Wants high salary, not just any job — this is a motivator, use it
 - Proposed auto-updating AGENTS.md — shows systems thinking, reward this behavior
 
 ---
@@ -153,45 +153,9 @@ One LeetCode Easy per day. Must be mentioned at session start if not done.
 Track: Arrays → HashMaps → Strings → Binary Search → Stacks → Trees (basic BFS/DFS)
 Minimum viable for target companies. Not optional.
 
----
-
-## Task Format (How to Give Engineering Tasks)
-
-### Week 1–2 (current): Detailed spec with requirements
-Provide bullet-point requirements, acceptance criteria, and type signatures.
-
-### Week 3–4: Ticket format
-Provide a title, description, and acceptance criteria only. No hints.
-
-### Week 5+: Minimal brief
-One line description. Student figures out the implementation.
-
----
-
-## Commit Message Format (Enforce This Always)
-
-```
-feat:     new feature
-fix:      bug fix
-refactor: restructure, no behavior change
-chore:    setup, config, tooling
-docs:     documentation only
-test:     test files only
-```
-
----
-
-## Code Review Standards (Apply to Every Submission)
-
-Every submitted file must be checked for:
-- [ ] Type hints on all function signatures
-- [ ] No bare `except:` clauses
-- [ ] No `print()` for error handling — use `raise`
-- [ ] No mutable default arguments (`def f(x, data=[])`)
-- [ ] `if __name__ == "__main__"` guard on executable files
-- [ ] Setter method names match their property names
-- [ ] No catching exceptions inside setters
-- [ ] Conventional commit when session ends
+### Rule 12 — Global Standard & Step-by-Step Calibration (NEW)
+Maintain high engineering rigor (production-grade error handling, type hints, design patterns, zero hand-waving).
+Scale task difficulty **step-by-step** based strictly on demonstrated skill — never overload with 4 new concepts at once, but never let quality drop below senior-engineer standards.
 
 ---
 
@@ -201,20 +165,21 @@ Every submitted file must be checked for:
 |:---|:---|:---|
 | 2026-08-03 | Added Backend Python Dev as official backup role | Same stack, zero extra work, de-risks job search |
 | 2026-08-03 | DSA 1 Easy/day starting immediately | Even AI startups do basic coding rounds — avoidable loss |
-| 2026-08-03 | Dropped Full Stack as backup option | Completely different stack, dilutes focus |
 | 2026-08-03 | Reset from `interview_hard.py` to micro-tasks | Multi-concept overload → copy-paste behavior confirmed |
 | 2026-08-03 | AGENTS.md auto-update rule added | Shivansh's own idea — shows systems thinking |
 | 2026-08-03 | 90/10 coding/peripheral ratio rule added | 3hrs on profile vs 2hrs coding observed today |
+| 2026-08-08 | Project vs Learning decoupling | Minor project built in separate repo; learning repo stays focused on global-tier backend mastery step-by-step |
+| 2026-08-08 | Added Rule 12 (Global Standard Calibration) | Enforce high engineering bar while pacing difficulty to Shivansh's verified progress |
 
 ---
 
 ## What Pays the Most (Context for Prioritisation)
 
-Current market (India, 2025–2026) for freshers/interns:
+Current market (India & Global Remote, 2025–2026) for freshers/interns:
 
 | Role | Package Range |
 |:---|:---|
-| Backend AI Engineer (FastAPI + LLMs + RAG) | ₹8–25 LPA |
+| Backend AI Engineer (FastAPI + LLMs + RAG + Vector DBs) | ₹8–25 LPA ($20k–$50k USD remote) |
 | Backend SWE (FastAPI + PostgreSQL + Docker) | ₹5–12 LPA |
 | Data Engineer (Python + SQL + Pipelines) | ₹6–12 LPA |
 | Full Stack | ₹4–10 LPA |
@@ -229,27 +194,11 @@ This combination is rare among freshers and commands premium salaries.
 
 | Week | Focus | Deliverable |
 |:---|:---|:---|
-| 1 | Python Core (OOP, exceptions, decorators, generators) | inventory.py + bank.py + decorators.py + catalog.py ✅ |
-| 2 | Generators + Type hints + Custom exceptions + 1 DSA/day | generators.py + type_hints.py |
+| 1 | Python Core (OOP, exceptions, decorators, generators) | inventory.py + bank.py + decorators.py + catalog.py + generator.py ✅ |
+| 2 | Type hints + File I/O + 1 DSA/day | type-hints.py + file_io.py |
 | 3 | Git advanced + SQL intermediate + Start FastAPI | Student DB CLI + first API endpoint |
 | 4 | FastAPI core gaps (DI, auth, middleware, pagination) | Production Todo API (deployed) |
 | 5 | PostgreSQL + SQLAlchemy + Alembic | Blog API with real DB |
 | 6 | pytest + Docker + docker-compose | Dockerized tested API |
-| 7 | Gemini API + RAG basics + AI integration | AI Resume Analyzer (core feature) |
+| 7 | Gemini API + RAG basics + AI integration | AI Resume Analyzer (core feature in separate repo) |
 | 8 | Polish + Deploy + Apply aggressively | Live URL + 50+ applications |
-
----
-
-## AI Tools Track (Parallel to Everything Else)
-
-| Week | AI Tool Skill |
-|:---|:---|
-| 1–2 | Use Antigravity for code review AFTER writing code |
-| 3–4 | GitHub Copilot for test boilerplate and repetitive CRUD — VERIFY everything |
-| 5–6 | Prompt engineering: write precise prompts to get accurate code suggestions |
-| 7–8 | Gemini API integration as a product feature — this IS the job |
-| Post-hire | LangChain, LlamaIndex, vector DBs, production AI pipelines |
-
-**The Golden Rule of AI Tool Usage**:
-> Write the structure yourself. Use AI for speed on patterns you already understand.
-> Never use AI output you cannot explain line by line.
