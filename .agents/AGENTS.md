@@ -73,6 +73,7 @@ Agent MUST use these to calibrate every session.
 - **Blank file challenges**: When asked to write `BankAccount` from scratch, he did it correctly in 10 mins
 - **Seeing the error first**: Running broken code and reading the traceback teaches faster than explanation
 - **Micro-tasks before complex tasks**: `OutOfStockError` alone → understood. 4 concepts at once → blindly followed
+- **Single-concept micro-task pacing**: 1 concept + 1 tiny exercise at a time (e.g., `write_text` alone). Explicitly requested by Shivansh — NEVER stack 3 levels/tasks at once for new topics.
 - **Self-correction instinct**: He corrected 3 bugs himself before being told — sign of real understanding forming
 - **Honest diagnostic questions**: He asks "am I actually learning?" regularly — calibrate to this honestly
 
