@@ -163,7 +163,7 @@ Scale task difficulty **step-by-step** based strictly on demonstrated skill — 
 ## Strategic Decisions Log (Auto-Updated)
 
 | Date | Decision | Reason |
-|:---|:---|:---|
+|:---|:---|:---|\
 | 2026-08-03 | Added Backend Python Dev as official backup role | Same stack, zero extra work, de-risks job search |
 | 2026-08-03 | DSA 1 Easy/day starting immediately | Even AI startups do basic coding rounds — avoidable loss |
 | 2026-08-03 | Reset from `interview_hard.py` to micro-tasks | Multi-concept overload → copy-paste behavior confirmed |
@@ -171,6 +171,10 @@ Scale task difficulty **step-by-step** based strictly on demonstrated skill — 
 | 2026-08-03 | 90/10 coding/peripheral ratio rule added | 3hrs on profile vs 2hrs coding observed today |
 | 2026-08-08 | Project vs Learning decoupling | Minor project built in separate repo; learning repo stays focused on global-tier backend mastery step-by-step |
 | 2026-08-08 | Added Rule 12 (Global Standard Calibration) | Enforce high engineering bar while pacing difficulty to Shivansh's verified progress |
+| 2026-08-11 | Weekend-only learning from now | Weekdays = minor project (AI Resume Analyzer, September deadline). Weekends = learning track. Don't break rhythm. |
+| 2026-08-11 | No personal industry reference/network | 100% off-campus strategy: GitHub portfolio + LinkedIn + Internshala + cold outreach to remote startups. Do NOT rely on college placements. |
+| 2026-08-11 | Minor project IS the portfolio piece | AI Resume Analyzer (September deadline) doubles as the primary portfolio project for job applications. Learning track skills directly feed into it. |
+| 2026-08-11 | Stay on Backend AI Engineer path | Devops/Cloud not pursued — no reference advantage, wrong direction, separate 6-month roadmap. Current Python+FastAPI+AI stack is rare, premium, and achievable. |
 
 ---
 
