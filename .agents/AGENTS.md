@@ -52,8 +52,10 @@
 - [x] DSA Day 1: Two Sum solved using HashMap O(n)
 - [x] Stage 1 Self-Assessments (OOPs, Properties, Exceptions, Decorators)
 - [x] Type hints (`Optional`, `Union`, `Callable`, `dict[str, Any]`)
-- [ ] **ACTIVE: Stage 2 — File I/O + pathlib + Context Managers**
-- [ ] SQL (intermediate → advanced: joins, window functions)
+- [x] File I/O + `pathlib` + Context Managers (`file_io.py`, `file_io_challenge.py`)
+- [x] Sprint 1 & 2 Capstone: `sprint-1-capstone.py` (Secure Audit Vault — 7 concepts integrated)
+- [x] Professional HTML Resume created (`Shivansh_Mishra_Resume.html`)
+- [ ] **ACTIVE: Stage 2 — SQL Foundations** (Micro-tasks 0 & 1 passed)
 - [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
