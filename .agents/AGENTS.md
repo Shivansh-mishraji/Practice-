@@ -160,6 +160,13 @@ Minimum viable for target companies. Not optional.
 Maintain high engineering rigor (production-grade error handling, type hints, design patterns, zero hand-waving).
 Scale task difficulty **step-by-step** based strictly on demonstrated skill — never overload with 4 new concepts at once, but never let quality drop below senior-engineer standards.
 
+### Rule 13 — Auto-Sync README.md on Progress & Commits (NEW — Shivansh's Idea)
+Whenever any module, milestone, or task is completed and committed, automatically update `README.md` to reflect:
+- New verified modules and file links in the progress tracker
+- Updated stage status badges and milestone tables
+- Any new capstones or design patterns implemented
+Ensures GitHub repository presentation is always 100% up to date with Shivansh's current capabilities.
+
 ---
 
 ## Strategic Decisions Log (Auto-Updated)
@@ -177,6 +184,7 @@ Scale task difficulty **step-by-step** based strictly on demonstrated skill — 
 | 2026-08-11 | No personal industry reference/network | 100% off-campus strategy: GitHub portfolio + LinkedIn + Internshala + cold outreach to remote startups. Do NOT rely on college placements. |
 | 2026-08-11 | Minor project IS the portfolio piece | AI Resume Analyzer (September deadline) doubles as the primary portfolio project for job applications. Learning track skills directly feed into it. |
 | 2026-08-11 | Stay on Backend AI Engineer path | Devops/Cloud not pursued — no reference advantage, wrong direction, separate 6-month roadmap. Current Python+FastAPI+AI stack is rare, premium, and achievable. |
+| 2026-08-23 | Added Rule 13 (Auto-Sync README.md) | Shivansh's idea — automatically update README.md on every commit/change to keep GitHub public presentation aligned with progress |
 
 ---
 
