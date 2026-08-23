@@ -1,46 +1,223 @@
-# Python Learning Journey 🚀
+<div align="center">
 
-Welcome to my Python learning journey repository! This codebase tracks my progress as I build production-quality Python backend systems from scratch without copy-pasting or vibe-coding.
+# ⚡ Python Backend & AI Engineering Journey
+
+<p align="center">
+  <img src="assets/banner.jpg" alt="Python Backend Architecture Banner" width="100%" style="border-radius: 12px;" />
+</p>
+
+[![Python Version](https://img.shields.io/badge/Python-3.13%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Modern%20Async%20APIs-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![SQL Database](https://img.shields.io/badge/Database-SQLite%20%7C%20PostgreSQL-336791.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Code Standard](https://img.shields.io/badge/Standard-Production%20Grade%20%26%20Typed-success.svg)](#-engineering-standards-enforced)
+[![Git Commits](https://img.shields.io/badge/Commits-Conventional-orange.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Active%20Sprint%202-brightgreen.svg)](#-curriculum--progress-tracker)
+
+<p align="center">
+  <b>A rigorous, from-scratch journey toward building production-ready Python backend systems, relational databases, and AI-integrated architectures.</b><br>
+  <i>No copy-pasting. No vibe-coding. Every module built and verified from blank-file specifications.</i>
+</p>
 
 ---
 
-## 🎯 Active Sprint: Stage 1 — Python Core
+</div>
 
-Located in [`Stage-1/`](file:///c:/Users/91727/Desktop/Library-Practice/Stage-1):
+## 📌 Executive Summary
 
-- **`catalog.py`**: Smart Product Catalog system implementing private state (`_price`, `_discount`), `@property` getters, setters with `ValueError` validation, and read-only computed properties (`final_price`).
-- **`vault.py`**: Secure Vault & Transaction system integrating OOP, private fields, custom decorators, and exception handling.
-- **`decorators.py`**: Custom execution timer (`@timer`) and argument validator (`@validate_positive`) using `functools.wraps` and `*args/**kwargs`.
-- **`bank.py`**: `BankAccount` class demonstrating `@property` validation, private state protection, and overdraft safety checks.
-- **`inventory.py`**: CLI-based Inventory Management System with `@dataclass`, magic methods (`__repr__`, `__len__`), category filtering, and restocking alerts.
+This repository chronicles my step-by-step progression from foundational Python principles to production-level backend engineering, relational database modeling, and scalable API development.
+
+Rather than relying on passive tutorials or surface-level code copying, every concept here was mastered through **blank-file challenges**, **system failure analysis**, and **senior-level code reviews**.
 
 ---
 
-## 📁 Repository Structure
+## 🗺️ Curriculum & Roadmap
+
+<p align="center">
+  <img src="assets/roadmap.jpg" alt="Backend AI Engineering Roadmap" width="100%" style="border-radius: 12px;" />
+</p>
+
+| Stage | Focus Area | Key Concepts | Status |
+|:---|:---|:---|:---:|
+| **Stage 1** | **Python Core & Advanced OOP** | Encapsulation, `@property` validation, Custom Exceptions, Decorators (`@wraps`), Generators (`yield` pipelines), Data Structures | **✅ Completed** |
+| **Stage 2** | **File I/O, SQL & FastAPI** | `pathlib`, Context Managers, JSON serialization, Relational Modeling, Parameterized SQL, `JOINs`, FastAPI setup | **🔥 Active** |
+| **Stage 3** | **Production APIs & Databases** | FastAPI routing, Pydantic v2 schemas, Dependency Injection, Middleware, SQLAlchemy ORM, PostgreSQL migrations (Alembic) | **⏳ Upcoming** |
+| **Stage 4** | **Testing, Docker & AI Integration** | `pytest` + mocking, Docker + `docker-compose`, Gemini API integration, Vector embeddings, Cloud deployment (Render/Railway) | **⏳ Upcoming** |
+
+---
+
+## 🚀 Step-by-Step Journey & Concrete Achievements
+
+```
+Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Step 3: Security Capstone ──► Step 4: SQL & FastAPI
+```
+
+---
+
+### Step 1: Python Core & Advanced Encapsulation
+> **Milestone:** Eliminating recursion bugs, mastering private state encapsulation, and building custom domain exception hierarchies.
+
+<p align="center">
+  <img src="assets/step1_oop.jpg" alt="Python OOP Mastery and Property Validation" width="100%" style="border-radius: 12px;" />
+</p>
+
+#### 💡 Core Breakthroughs:
+- **Private State Protection (`_balance`):** Internalized why getters must return `self._balance` rather than `self.balance` to avoid infinite recursive call stack overflows.
+- **Validation Setters:** Enforced business constraints directly at attribute assignment (`@balance.setter` raising `ValueError` on invalid states).
+- **Domain Exceptions (`class InsufficientFundsError(Exception)`):** Replaced silent `print()` failures with structured exception raising for enterprise reliability.
+
+#### 📁 Implemented Modules:
+- [`Stage-1/projects/bank.py`](Stage-1/projects/bank.py): `BankAccount` with transaction guards and property validation.
+- [`Stage-1/projects/catalog.py`](Stage-1/projects/catalog.py): Smart product catalog with automated dynamic discount calculations.
+- [`Stage-1/projects/inventory.py`](Stage-1/projects/inventory.py): CLI Inventory Manager leveraging `@dataclass` and Python magic methods (`__repr__`, `__len__`).
+
+---
+
+### Step 2: Higher-Order Decorators & Lazy Generator Streaming
+> **Milestone:** Intercepting execution flows with decorators and building memory-efficient data pipelines processing streams in $O(1)$ memory.
+
+<p align="center">
+  <img src="assets/step2_pipeline.jpg" alt="Python Decorators and Generator Streaming Pipeline" width="100%" style="border-radius: 12px;" />
+</p>
+
+#### 💡 Core Breakthroughs:
+- **Function Introspection (`@functools.wraps`):** Preserved function metadata (`__name__`, docstrings, type annotations) across wrapper layers.
+- **Universal Parameter Forwarding (`*args, **kwargs`):** Engineered decorators capable of intercepting any callable signature without breaking interfaces.
+- **Lazy Stream Processing (`yield`):** Replaced eager memory-hungry list allocations (`return [x for x in data]`) with chained generator pipelines processing multi-gigabyte log streams with constant memory footprint.
+
+#### 📁 Implemented Modules:
+- [`Stage-1/projects/decorators.py`](Stage-1/projects/decorators.py): Custom execution timing (`@timer`) and argument validation (`@validate_positive`).
+- [`Stage-1/projects/generator.py`](Stage-1/projects/generator.py): 3-stage chained generator log pipeline (`read_logs` → `filter_errors` → `parse_ip`).
+- [`Stage-1/interview/`](Stage-1/interview/): High-throughput `RateLimiter` and `@require_auth` interceptors.
+
+---
+
+### Step 3: Robust File I/O & The 7-in-1 Secure Audit Vault Capstone
+> **Milestone:** Cross-platform file manipulation with `pathlib`, leak-free resource cleanup via Context Managers, and integrating all 7 core backend patterns from a blank file.
+
+<p align="center">
+  <img src="assets/step3_vault.jpg" alt="Cybersecurity Backend Audit Vault Architecture" width="100%" style="border-radius: 12px;" />
+</p>
+
+#### 💡 Core Breakthroughs:
+- **Leak-Free Context Managers (`with open(...)`):** Guaranteed deterministic file descriptor closure even during runtime exception handling.
+- **Cross-Platform Path Manipulation (`pathlib.Path`):** Unified POSIX and Windows filesystem operations with automatic directory provisioning (`parents=True, exist_ok=True`).
+- **The 7-in-1 Integration Capstone:** Built [`Stage-2/sprint-1-capstone.py`](Stage-2/sprint-1-capstone.py) completely from scratch, synthesizing:
+  1. *Custom Exception:* `SecurityViolationError`
+  2. *OOP Encapsulation:* `User` with `@property` role validation
+  3. *Decorator Security:* `@require_admin` role-based access control
+  4. *Type Hints:* Full typing across arguments and returns
+  5. *File I/O:* JSON audit event logging
+  6. *Generators:* Lazy log streaming from disk
+  7. *Test Suite:* Automated positive & negative security assertions
+
+#### 📁 Implemented Modules:
+- [`Stage-2/file_io.py`](Stage-2/file_io.py): Core `pathlib` and JSON persistence utility engine.
+- [`Stage-2/file_io_challenge.py`](Stage-2/file_io_challenge.py): Blank-file user storage and data serialization challenge.
+- [`Stage-2/sprint-1-capstone.py`](Stage-2/sprint-1-capstone.py): **Sprint 1 & 2 Capstone — Secure System Audit Vault**.
+
+---
+
+### Step 4: Relational SQL Database Engineering & FastAPI Architecture
+> **Milestone:** Designing relational schemas, defending against SQL injections, mastering relational JOINs, and transitioning into asynchronous web APIs.
+
+<p align="center">
+  <img src="assets/step4_sql_ai.jpg" alt="Relational Database and FastAPI AI Architecture" width="100%" style="border-radius: 12px;" />
+</p>
+
+#### 💡 Core Breakthroughs:
+- **SQL Injection Prevention:** Enforced parameterized query execution using `(?, ?, ?)` placeholder substitution instead of vulnerable raw string interpolation.
+- **Relational Integrity:** Implemented Foreign Key constraints linking `resumes` child records to parent `users` entities.
+- **Relational Set Operations:** Engineered `INNER JOIN` (intersection) vs. `LEFT JOIN` (complete left-side retention with NULL fallbacks).
+- **Asynchronous Architecture Pathway:** Laying database foundations to power the upcoming **AI Resume & Job Description Analyzer** backend.
+
+#### 📁 Implemented Modules:
+- [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): In-memory database initialization, cursor management, and DDL execution.
+- [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Parameterized DML insertions and cursor row retrieval.
+- [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
+
+---
+
+## 🛠️ Technical Stack & Tooling
+
+```
+Core Language    : Python 3.13+
+Backend API      : FastAPI, Pydantic v2 (Active/Upcoming)
+Databases        : SQLite (In-Memory & File), PostgreSQL (Upcoming)
+Architecture     : Modular Clean Architecture (Routes, Services, Schemas)
+File Operations  : pathlib, Context Managers, JSON Serialization
+DevOps & Tooling : Git (Conventional Commits), VS Code, Antigravity IDE
+AI Integration   : Google Gemini API (In Progress)
+```
+
+---
+
+## 📂 Repository Structure
 
 ```
 Python-Learning-Journey/
-├── .agents/                    # Workspace mentor rules & progress tracking
-├── Stage-1/                    # Active Sprint: Python Core modules
-│   ├── catalog.py              # Product Catalog (@property getter/setter/read-only)
-│   ├── vault.py                # Secure Vault Capstone
-│   ├── decorators.py           # Custom timing & validation decorators
-│   ├── bank.py                 # Bank Account property validation
-│   ├── inventory.py            # Inventory System (@dataclass, CLI)
-│   └── Topics.md               # Stage 1 Syllabus
-└── archive/                    # Archived legacy practice scripts & notebooks
-    ├── legacy_scripts/
-    └── legacy_notebooks/
+├── .agents/                    # Workspace mentor rules, progress logs & strategy
+├── assets/                     # Milestone architecture diagrams & roadmap visuals
+│   ├── banner.jpg              # Hero banner image
+│   ├── roadmap.jpg             # 4-Stage engineering roadmap
+│   ├── step1_oop.jpg           # Step 1: OOP & Property Validation visual
+│   ├── step2_pipeline.jpg      # Step 2: Decorators & Stream Pipeline visual
+│   ├── step3_vault.jpg         # Step 3: Secure Audit Vault Capstone visual
+│   └── step4_sql_ai.jpg        # Step 4: Relational SQL & AI Architecture visual
+├── Stage-1/                    # Stage 1: Python Core Mastery
+│   ├── projects/               # Capstone implementations (vault, bank, catalog, generator)
+│   ├── practice/               # Blank-file re-implementation proofs
+│   ├── interview/              # RateLimiter, require_auth, APIResponse drills
+│   ├── Assessment/             # Self-assessment verification tests
+│   └── DSA/                    # Data Structures & Algorithms track (HashMap Two Sum O(n))
+├── Stage-2/                    # Stage 2: File I/O, SQL & FastAPI
+│   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, JOINs)
+│   │   ├── micro_00.py         # DB connection & DDL table creation
+│   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
+│   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations
+│   ├── file_io.py              # pathlib & JSON storage utility module
+│   ├── file_io_challenge.py    # Blank-file File I/O capstone challenge
+│   └── sprint-1-capstone.py    # Multi-concept Secure Audit Vault Capstone
+└── README.md                   # Complete journey documentation
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run & Verify
 
-Run any module directly from the repository root:
+Clone the repository and execute any module directly:
 
 ```bash
-python Stage-1/catalog.py
-python Stage-1/vault.py
-python Stage-1/inventory.py
+# Clone the repository
+git clone https://github.com/Shivansh-mishraji/Python-Learning-Journey.git
+cd Python-Learning-Journey
+
+# Run Stage 2 Capstone (Secure Audit Vault - 7 Concepts Integrated)
+python Stage-2/sprint-1-capstone.py
+
+# Run SQL Relational JOINs Engine
+python Stage-2/SQL/joins.py
+
+# Run File I/O Challenge
+python Stage-2/file_io_challenge.py
+
+# Run Lazy Log Stream Generator
+python Stage-1/projects/generator.py
 ```
+
+---
+
+## 💡 Engineering Standards Enforced
+
+1. **Explicit Type Annotations:** Strict typing on all signatures using `Optional`, `Union`, `Callable`, `Generator`.
+2. **Never Mask Exceptions:** Domain-specific exceptions raised explicitly instead of generic `print()` statements.
+3. **Deterministic Resource Safety:** Context managers (`with`) mandatory for all I/O and database operations to guarantee leak-free cleanup.
+4. **Verified Mastery:** Every concept proven by writing working implementations from a completely blank file without starter code.
+
+---
+
+<div align="center">
+
+*Maintained with pride by **Shivansh Mishra** • Aspiring Backend & AI Engineer*<br>
+[LinkedIn Profile](https://www.linkedin.com/in/shivansh-mishra-132b97358/) • [GitHub Profile](https://github.com/Shivansh-mishraji)
+
+</div>
