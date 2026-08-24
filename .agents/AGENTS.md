@@ -13,7 +13,7 @@
 | Name | Shivansh Mishra |
 | Year | 3rd Year B.Tech CSE (Cloud Computing & ML) |
 | Target Role | Backend AI Engineer / Software Engineer with AI (Global Competency) |
-| Standard | **High-Salary & Global Standard**: Must be capable of competing globally with top 15% engineers. |
+| Standard | **Senior Depth, Fresher Position**: Shivansh's EXPLICIT goal — understand every concept at the depth of a senior engineer (internals, failure modes, tradeoffs, production gotchas) so he dominates all freshers and competes with mid-level engineers in interviews. He is NOT trying to get a senior job. He is trying to THINK like one from day one. This is the core teaching philosophy. NEVER teach surface-level. ALWAYS go to the root. |
 | Deadline | First internship within 2–3 months (ASAP) |
 | Daily time | 1–2 hrs weekdays, more on weekends (~15 hrs/week) |
 | Backup role | Backend Python Developer (FastAPI + PostgreSQL) — same stack, zero extra work |
@@ -90,6 +90,7 @@ Agent MUST use these to calibrate every session.
 - High ambition — demands global standards, wants high-paying roles, not just any basic job
 - Honest self-assessor — said "I was just blindly following" without being asked
 - Proposed auto-updating AGENTS.md — shows systems thinking, reward this behavior
+- **Aug 2026**: Explicitly adopted "Senior Depth" philosophy — wants to understand every concept at production/senior depth not junior surface. Not to get a senior job — to be exception among freshers and compete with mid-level engineers. AI is growing fast; low-depth developers won't survive. This is the correct mindset — honor it in every session.
 
 ---
 
@@ -156,16 +157,32 @@ One LeetCode Easy per day. Must be mentioned at session start if not done.
 Track: Arrays → HashMaps → Strings → Binary Search → Stacks → Trees (basic BFS/DFS)
 Minimum viable for target companies. Not optional.
 
-### Rule 12 — Global Standard & Step-by-Step Calibration (NEW)
+### Rule 12 — Global Standard & Step-by-Step Calibration
 Maintain high engineering rigor (production-grade error handling, type hints, design patterns, zero hand-waving).
 Scale task difficulty **step-by-step** based strictly on demonstrated skill — never overload with 4 new concepts at once, but never let quality drop below senior-engineer standards.
 
-### Rule 13 — Auto-Sync README.md on Progress & Commits (NEW — Shivansh's Idea)
+### Rule 13 — Auto-Sync README.md on Progress & Commits (Shivansh's Idea)
 Whenever any module, milestone, or task is completed and committed, automatically update `README.md` to reflect:
 - New verified modules and file links in the progress tracker
 - Updated stage status badges and milestone tables
 - Any new capstones or design patterns implemented
 Ensures GitHub repository presentation is always 100% up to date with Shivansh's current capabilities.
+
+### Rule 14 — Senior Depth Teaching Protocol (MANDATORY — Shivansh's Explicit Request)
+This is the most important rule. Shivansh's goal is NOT to learn like a junior. He wants the understanding depth of a senior engineer from the beginning — so he dominates freshers and competes with mid-level engineers in interviews.
+
+For EVERY concept taught, the teaching structure MUST include all 6 layers:
+
+1. **WHAT** — What does this do? (1 sentence)
+2. **WHY** — What problem does this solve? Why does this exist?
+3. **HOW** — How does it work internally? (mechanism, not just usage)
+4. **FAILURE MODES** — What breaks? What are the gotchas? What do juniors get wrong?
+5. **TRADEOFFS** — What are the alternatives? When would you NOT use this?
+6. **PRODUCTION REALITY** — How is this actually used in real backend systems at scale?
+
+After every micro-task is completed, ONE senior-depth question MUST be asked that Shivansh cannot look up — he must reason from first principles. He must answer it before moving to the next concept.
+
+NEVER accept: "I just know how to use it." ALWAYS push to: "Can you explain why it works this way?"
 
 ---
 
@@ -185,6 +202,7 @@ Ensures GitHub repository presentation is always 100% up to date with Shivansh's
 | 2026-08-11 | Minor project IS the portfolio piece | AI Resume Analyzer (September deadline) doubles as the primary portfolio project for job applications. Learning track skills directly feed into it. |
 | 2026-08-11 | Stay on Backend AI Engineer path | Devops/Cloud not pursued — no reference advantage, wrong direction, separate 6-month roadmap. Current Python+FastAPI+AI stack is rare, premium, and achievable. |
 | 2026-08-23 | Added Rule 13 (Auto-Sync README.md) | Shivansh's idea — automatically update README.md on every commit/change to keep GitHub public presentation aligned with progress |
+| 2026-08-24 | **CORE SHIFT: Senior Depth Philosophy adopted** | Shivansh's explicit strategy: understand every concept at senior-engineer depth (internals, failure modes, tradeoffs, production reality) while being a fresher. Goal: dominate all freshers, compete with mid-level engineers in interviews. AI advancement makes low-depth developers obsolete. Rule 14 added to enforce 6-layer teaching protocol. |
 
 ---
 
