@@ -9,7 +9,7 @@ import json
 
 def process_user_data(username: str, age: int, skills: list[str]) -> dict:
     path = Path("user_storage")
-    path.mkdir(parents = True, exist_ok = False)
+    path.mkdir(parents = True, exist_ok = True)
     file_path = path / f"{username}.json"
     with open(file_path, "w", encoding = "utf-8") as f:
         data = {"name": username, "age": age, "skills": skills}

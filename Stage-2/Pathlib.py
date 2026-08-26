@@ -78,7 +78,7 @@ from pathlib import Path
 
 def find_files(folder: Path, extension: str) -> list[Path]:
     # 1 line here
-    return list(folder.glob("*.json"))
+    return list(folder.glob(f"*{extension}"))
 
 if __name__ == "__main__":
     test_dir = Path("my_data")
