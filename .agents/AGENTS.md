@@ -77,6 +77,7 @@ Agent MUST use these to calibrate every session.
 - **Micro-tasks before complex tasks**: `OutOfStockError` alone → understood. 4 concepts at once → blindly followed
 - **Single-concept micro-task pacing**: 1 concept + 1 tiny exercise at a time (e.g., `write_text` alone). Explicitly requested by Shivansh — NEVER stack 3 levels/tasks at once for new topics.
 - **Self-correction instinct**: He corrected 3 bugs himself before being told — sign of real understanding forming
+- **First-principles systems deduction**: Proven today — Shivansh can deduce complex architectural solutions (like transaction serialization and rollbacks under race conditions) purely from raw logic without prior formal teaching. Bridge this raw intuition with formal engineering vocabulary (e.g. Row-Level Locking, TOCTOU Race Condition, Atomicity) and 3-line micro-code execution.
 - **Honest diagnostic questions**: He asks "am I actually learning?" regularly — calibrate to this honestly
 
 ### What Doesn't Work for Shivansh
@@ -203,7 +204,7 @@ NEVER accept: "I just know how to use it." ALWAYS push to: "Can you explain why 
 | 2026-08-11 | Stay on Backend AI Engineer path | Devops/Cloud not pursued — no reference advantage, wrong direction, separate 6-month roadmap. Current Python+FastAPI+AI stack is rare, premium, and achievable. |
 | 2026-08-23 | Added Rule 13 (Auto-Sync README.md) | Shivansh's idea — automatically update README.md on every commit/change to keep GitHub public presentation aligned with progress |
 | 2026-08-24 | **CORE SHIFT: Senior Depth Philosophy adopted** | Shivansh's explicit strategy: understand every concept at senior-engineer depth (internals, failure modes, tradeoffs, production reality) while being a fresher. Goal: dominate all freshers, compete with mid-level engineers in interviews. AI advancement makes low-depth developers obsolete. Rule 14 added to enforce 6-layer teaching protocol. |
-| 2026-08-26 | **Senior-Depth Diagnostic & ACID Drill Completed** | Successfully diagnosed and proved from first principles: (1) ACID Atomicity & `conn.rollback()` in retry decorators, (2) $O(1)$ stream generator memory guarantees vs $O(N)$ list OOM crashes, (3) Parameterized query 2-phase compilation defense, (4) `@functools.wraps` metadata introspection in FastAPI. |
+| 2026-08-26 | **Senior-Depth Diagnostic & Concurrency Race Condition Drill** | Shivansh demonstrated strong first-principles logical deduction on unseen, complex systems problems: (1) Diagnosed ACID Atomicity & `conn.rollback()` under retry decorators, (2) Deduced serialization & transaction rejection during high-concurrency race conditions (Double Spending). Protocol: bridge his strong raw intuition with formal vocabulary and 3-line micro-code execution. |
 
 ---
 
