@@ -131,8 +131,11 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - **Asynchronous Architecture Pathway:** Laying database foundations to power the upcoming **AI Resume & Job Description Analyzer** backend.
 
 #### 📁 Implemented Modules:
-- [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): In-memory database initialization, cursor management, and DDL execution.
-- [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Parameterized DML insertions and cursor row retrieval.
+- [`Stage-2/SQL/sql_drill_00.py`](Stage-2/SQL/sql_drill_00.py): In-memory DB connection, DDL `CREATE TABLE`, `sqlite_master` verification — written from blank file.
+- [`Stage-2/SQL/sql_drill_01.py`](Stage-2/SQL/sql_drill_01.py): Parameterized `INSERT (?, ?, ?)` and `SELECT fetchall()` — **passed on first try, zero guidance.**
+- [`Stage-2/SQL/sql_drill_02.py`](Stage-2/SQL/sql_drill_02.py): Relational schema with `FOREIGN KEY` constraints, `PRAGMA foreign_keys = ON`, and `ON DELETE` behavior — `IntegrityError` verified against orphan records.
+- [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): Initial DDL table creation and cursor management.
+- [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Initial parameterized DML insertions.
 - [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
 
 ---
@@ -170,7 +173,10 @@ Python-Learning-Journey/
 │   ├── Assessment/             # Self-assessment verification tests
 │   └── DSA/                    # Data Structures & Algorithms track (HashMap Two Sum O(n))
 ├── Stage-2/                    # Stage 2: File I/O, SQL & FastAPI
-│   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, JOINs)
+│   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, FK constraints, JOINs)
+│   │   ├── sql_drill_00.py     # ✅ DDL from blank file — CREATE TABLE, sqlite_master
+│   │   ├── sql_drill_01.py     # ✅ Parameterized INSERT & SELECT — first-try pass
+│   │   ├── sql_drill_02.py     # ✅ Foreign Keys, PRAGMA, ON DELETE behavior, Soft Deletes
 │   │   ├── micro_00.py         # DB connection & DDL table creation
 │   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
 │   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations
@@ -212,6 +218,7 @@ python Stage-1/projects/generator.py
 2. **Never Mask Exceptions:** Domain-specific exceptions raised explicitly instead of generic `print()` statements.
 3. **Deterministic Resource Safety:** Context managers (`with`) mandatory for all I/O and database operations to guarantee leak-free cleanup.
 4. **Verified Mastery:** Every concept proven by writing working implementations from a completely blank file without starter code.
+5. **Senior Depth Standard:** Every concept mastered at production-engineer depth — internals, failure modes, tradeoffs, and real-world implications — not just surface-level API usage.
 
 ---
 

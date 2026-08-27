@@ -55,7 +55,14 @@
 - [x] File I/O + `pathlib` + Context Managers (`file_io.py`, `file_io_challenge.py`)
 - [x] Sprint 1 & 2 Capstone: `sprint-1-capstone.py` (Secure Audit Vault — 7 concepts integrated)
 - [x] Professional HTML Resume created (`Shivansh_Mishra_Resume.html`)
-- [ ] **ACTIVE: Stage 2 — SQL Foundations** (Micro-tasks 0 & 1 passed)
+- [x] SQL Drill 00: `CREATE TABLE`, `sqlite3.connect(":memory:")`, `sqlite_master` verification — from blank file
+- [x] SQL Drill 01: Parameterized `INSERT (?, ?, ?)` and `SELECT fetchall()` — **first-try pass, zero guidance**
+- [x] SQL Drill 02: `FOREIGN KEY` relational schema, `PRAGMA foreign_keys = ON`, `ON DELETE` behavior, `IntegrityError` verified
+- [x] Senior-Depth Diagnostic Drills: ACID Atomicity, Race Conditions (TOCTOU), `conn.rollback()` in retry decorators, `@functools.wraps` introspection, $O(1)$ generator memory guarantees, Prepared Statement Caching, Soft Deletes vs `ON DELETE CASCADE`, Atomic Write Pattern
+- [x] **ACTIVE: Stage 2 — SQL Foundations** (Drills 00, 01, 02 complete — Drill 03 JOINs next)
+- [ ] SQL Drill 03: `INNER JOIN` vs `LEFT JOIN` from blank file
+- [ ] SQL Drill 04: Transactions, `ROLLBACK`, ACID in code
+- [ ] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN`
 - [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
