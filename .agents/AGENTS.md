@@ -60,7 +60,7 @@
 - [x] SQL Drill 02: `FOREIGN KEY` relational schema, `PRAGMA foreign_keys = ON`, `ON DELETE` behavior, `IntegrityError` verified
 - [x] Senior-Depth Diagnostic Drills: ACID Atomicity, Race Conditions (TOCTOU), `conn.rollback()` in retry decorators, `@functools.wraps` introspection, $O(1)$ generator memory guarantees, Prepared Statement Caching, Soft Deletes vs `ON DELETE CASCADE`, Atomic Write Pattern
 - [x] **ACTIVE: Stage 2 — SQL Foundations** (Drills 00, 01, 02 complete — Drill 03 JOINs next)
-- [ ] SQL Drill 03: `INNER JOIN` vs `LEFT JOIN` from blank file
+- [x] SQL Drill 03: `INNER JOIN` vs `LEFT JOIN` from blank file — NULL handling, orphan detection via `WHERE right.id IS NULL`, RIGHT JOIN equivalence
 - [ ] SQL Drill 04: Transactions, `ROLLBACK`, ACID in code
 - [ ] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN`
 - [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
@@ -192,6 +192,16 @@ For EVERY concept taught, the teaching structure MUST include all 6 layers:
 After every micro-task is completed, ONE senior-depth question MUST be asked that Shivansh cannot look up — he must reason from first principles. He must answer it before moving to the next concept.
 
 NEVER accept: "I just know how to use it." ALWAYS push to: "Can you explain why it works this way?"
+
+### Rule 15 — Auto-Commit & Auto-Sync After Every Completed Task (Shivansh's Explicit Rule)
+After EVERY completed file, drill, or task — without waiting for Shivansh to ask — automatically:
+1. Update `README.md` → Add the new file to the Implemented Modules list and Repository Structure.
+2. Update `.agents/AGENTS.md` → Mark the completed item as `[x]` in the progress tracker and add a session log entry.
+3. `git add` all changed files (the new drill file + README.md + AGENTS.md).
+4. `git commit -m "feat(sql|stage|etc): <drill name> — <what was mastered>"`.
+5. `git push origin main`.
+
+This is NON-NEGOTIABLE. Shivansh must never have to ask for a commit. Every drill completion = automatic full sync + push.
 
 ---
 
