@@ -61,7 +61,7 @@
 - [x] Senior-Depth Diagnostic Drills: ACID Atomicity, Race Conditions (TOCTOU), `conn.rollback()` in retry decorators, `@functools.wraps` introspection, $O(1)$ generator memory guarantees, Prepared Statement Caching, Soft Deletes vs `ON DELETE CASCADE`, Atomic Write Pattern
 - [x] **ACTIVE: Stage 2 — SQL Foundations** (Drills 00, 01, 02 complete — Drill 03 JOINs next)
 - [x] SQL Drill 03: `INNER JOIN` vs `LEFT JOIN` from blank file — NULL handling, orphan detection via `WHERE right.id IS NULL`, RIGHT JOIN equivalence
-- [ ] SQL Drill 04: Transactions, `ROLLBACK`, ACID in code
+- [x] SQL Drill 04: Transactions, `ROLLBACK`, ACID in code — atomic balance update with `WHERE balance >= ?`, `cursor.rowcount` zero-check, rollback on exception
 - [ ] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN`
 - [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
