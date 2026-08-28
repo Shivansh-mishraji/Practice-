@@ -136,6 +136,7 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - [`Stage-2/SQL/sql_drill_02.py`](Stage-2/SQL/sql_drill_02.py): Relational schema with `FOREIGN KEY` constraints, `PRAGMA foreign_keys = ON`, and `ON DELETE` behavior — `IntegrityError` verified against orphan records.
 - [`Stage-2/SQL/sql_drill_03.py`](Stage-2/SQL/sql_drill_03.py): `INNER JOIN` (intersection only) vs `LEFT JOIN` (full left-side retention with `NULL` fallback) — orphan detection pattern using `WHERE right_table.id IS NULL`.
 - [`Stage-2/SQL/sql_drill_04.py`](Stage-2/SQL/sql_drill_04.py): ACID Transactions & `ROLLBACK` in code — atomic money transfer with `WHERE balance >= amount` guards, `cursor.rowcount` zero-check, and exception rollback defense.
+- [`Stage-2/SQL/sql_drill_05.py`](Stage-2/SQL/sql_drill_05.py): B-Tree Indexes & `EXPLAIN QUERY PLAN` — inspecting query execution plans, verifying `SCAN` (unindexed $O(N)$ full table scan) vs `SEARCH USING INDEX` ($O(\log N)$ B-Tree lookup).
 - [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): Initial DDL table creation and cursor management.
 - [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Initial parameterized DML insertions.
 - [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
@@ -175,12 +176,13 @@ Python-Learning-Journey/
 │   ├── Assessment/             # Self-assessment verification tests
 │   └── DSA/                    # Data Structures & Algorithms track (HashMap Two Sum O(n))
 ├── Stage-2/                    # Stage 2: File I/O, SQL & FastAPI
-│   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, FK constraints, JOINs, ACID)
+│   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, FK constraints, JOINs, ACID, Indexes)
 │   │   ├── sql_drill_00.py     # ✅ DDL from blank file — CREATE TABLE, sqlite_master
 │   │   ├── sql_drill_01.py     # ✅ Parameterized INSERT & SELECT — first-try pass
 │   │   ├── sql_drill_02.py     # ✅ Foreign Keys, PRAGMA, ON DELETE behavior, Soft Deletes
 │   │   ├── sql_drill_03.py     # ✅ INNER JOIN vs LEFT JOIN, NULL handling, orphan detection
 │   │   ├── sql_drill_04.py     # ✅ ACID Transactions, Atomic Balance Guards, ROLLBACK handling
+│   │   ├── sql_drill_05.py     # ✅ B-Tree Indexes & EXPLAIN QUERY PLAN (SCAN vs SEARCH)
 │   │   ├── micro_00.py         # DB connection & DDL table creation
 │   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
 │   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations

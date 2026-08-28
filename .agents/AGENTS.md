@@ -62,8 +62,9 @@
 - [x] **ACTIVE: Stage 2 — SQL Foundations** (Drills 00, 01, 02 complete — Drill 03 JOINs next)
 - [x] SQL Drill 03: `INNER JOIN` vs `LEFT JOIN` from blank file — NULL handling, orphan detection via `WHERE right.id IS NULL`, RIGHT JOIN equivalence
 - [x] SQL Drill 04: Transactions, `ROLLBACK`, ACID in code — atomic balance update with `WHERE balance >= ?`, `cursor.rowcount` zero-check, rollback on exception
-- [ ] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN`
-- [ ] FastAPI (DI, Pydantic v2, middleware, auth, pagination)
+- [x] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN` — B-Tree Index creation, verification of `SCAN` ($O(N)$ full scan) vs `SEARCH USING INDEX` ($O(\log N)$ lookup)
+- [x] **Stage 2 SQL Foundations: FULLY MASTERED (Drills 00 to 05 passed from blank files)**
+- [ ] **ACTIVE NEXT: FastAPI Foundations** (Setup, Routing, Pydantic v2 schemas, Dependency Injection)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
 - [ ] Docker + docker-compose
