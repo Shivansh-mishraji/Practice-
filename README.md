@@ -139,6 +139,7 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - [`Stage-2/SQL/sql_drill_05.py`](Stage-2/SQL/sql_drill_05.py): B-Tree Indexes & `EXPLAIN QUERY PLAN` — inspecting query execution plans, verifying `SCAN` (unindexed $O(N)$ full table scan) vs `SEARCH USING INDEX` ($O(\log N)$ B-Tree lookup).
 - [`Stage-2/SQL/sql_final_assesment.py`](Stage-2/SQL/sql_final_assesment.py): **SQL Final Assessment** — 5/5 tests passed from blank file. All concepts integrated: FK constraints, INNER/LEFT JOINs, ACID transactions, B-Tree index verification via `EXPLAIN QUERY PLAN`.
 - [`Stage-2/FastAPI/main.py`](Stage-2/FastAPI/main.py): FastAPI app skeleton — 3 GET routes, path parameters, Pydantic v2 `BaseModel` request body validation (`POST /users`), automatic HTTP 422 on invalid input, Swagger UI at `/docs`.
+- [`Stage-2/FastAPI/users_api.py`](Stage-2/FastAPI/users_api.py): **SQL + FastAPI Integration** — in-memory SQLite database wired to live REST endpoints (`GET /users`, `GET /users/{id}` with 404 handler, `POST /users` returning HTTP 201 + `lastrowid`), thread-safe connection pooling.
 - [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): Initial DDL table creation and cursor management.
 - [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Initial parameterized DML insertions.
 - [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
@@ -187,7 +188,8 @@ Python-Learning-Journey/
 │   │   ├── sql_drill_05.py         # ✅ B-Tree Indexes & EXPLAIN QUERY PLAN (SCAN vs SEARCH)
 │   │   ├── sql_final_assesment.py  # ✅ SQL FINAL ASSESSMENT — 5/5 tests, all concepts integrated
 │   ├── FastAPI/                # FastAPI REST API drills
-│   │   └── main.py             # ✅ Drill 01 — App skeleton, 3 routes, path params, Swagger UI
+│   │   ├── main.py             # ✅ Drill 01 & 02 — App skeleton, Pydantic v2 validation, Swagger UI
+│   │   └── users_api.py        # ✅ Drill 03 — SQL + FastAPI Integration (CRUD, 404s, 201 Created)
 │   │   ├── micro_00.py         # DB connection & DDL table creation
 │   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
 │   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations
