@@ -65,7 +65,10 @@
 - [x] SQL Drill 05: Indexes & `EXPLAIN QUERY PLAN` — B-Tree Index creation, verification of `SCAN` ($O(N)$ full scan) vs `SEARCH USING INDEX` ($O(\log N)$ lookup)
 - [x] **Stage 2 SQL Foundations: FULLY MASTERED (Drills 00 to 05 passed from blank files)**
 - [x] **SQL FINAL ASSESSMENT: 5/5 Tests Passed** — FK constraints, INNER/LEFT JOINs, ACID transactions, index verification — all integrated in one blank file from memory
-- [ ] **ACTIVE NEXT: FastAPI Foundations** (Setup, Routing, Pydantic v2 schemas, Dependency Injection)
+- [x] **ACTIVE NEXT: FastAPI Foundations** (Setup, Routing, Pydantic v2 schemas, Dependency Injection)
+- [x] FastAPI Drill 01: App skeleton, `FastAPI(title, version)`, 3 routes, path parameters `{user_id: int}`, Swagger UI at `/docs`, `--reload` vs production `--workers` internals
+- [ ] FastAPI Drill 02: Pydantic v2 schemas (request body validation, POST endpoint)
+- [ ] FastAPI Drill 03: SQL + FastAPI integration (SQLite-backed endpoints)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
 - [ ] Docker + docker-compose
