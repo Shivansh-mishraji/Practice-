@@ -137,6 +137,7 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - [`Stage-2/SQL/sql_drill_03.py`](Stage-2/SQL/sql_drill_03.py): `INNER JOIN` (intersection only) vs `LEFT JOIN` (full left-side retention with `NULL` fallback) — orphan detection pattern using `WHERE right_table.id IS NULL`.
 - [`Stage-2/SQL/sql_drill_04.py`](Stage-2/SQL/sql_drill_04.py): ACID Transactions & `ROLLBACK` in code — atomic money transfer with `WHERE balance >= amount` guards, `cursor.rowcount` zero-check, and exception rollback defense.
 - [`Stage-2/SQL/sql_drill_05.py`](Stage-2/SQL/sql_drill_05.py): B-Tree Indexes & `EXPLAIN QUERY PLAN` — inspecting query execution plans, verifying `SCAN` (unindexed $O(N)$ full table scan) vs `SEARCH USING INDEX` ($O(\log N)$ B-Tree lookup).
+- [`Stage-2/SQL/sql_final_assesment.py`](Stage-2/SQL/sql_final_assesment.py): **SQL Final Assessment** — 5/5 tests passed from blank file. All concepts integrated: FK constraints, INNER/LEFT JOINs, ACID transactions, B-Tree index verification via `EXPLAIN QUERY PLAN`.
 - [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): Initial DDL table creation and cursor management.
 - [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Initial parameterized DML insertions.
 - [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
@@ -182,7 +183,8 @@ Python-Learning-Journey/
 │   │   ├── sql_drill_02.py     # ✅ Foreign Keys, PRAGMA, ON DELETE behavior, Soft Deletes
 │   │   ├── sql_drill_03.py     # ✅ INNER JOIN vs LEFT JOIN, NULL handling, orphan detection
 │   │   ├── sql_drill_04.py     # ✅ ACID Transactions, Atomic Balance Guards, ROLLBACK handling
-│   │   ├── sql_drill_05.py     # ✅ B-Tree Indexes & EXPLAIN QUERY PLAN (SCAN vs SEARCH)
+│   │   ├── sql_drill_05.py         # ✅ B-Tree Indexes & EXPLAIN QUERY PLAN (SCAN vs SEARCH)
+│   │   ├── sql_final_assesment.py  # ✅ SQL FINAL ASSESSMENT — 5/5 tests, all concepts integrated
 │   │   ├── micro_00.py         # DB connection & DDL table creation
 │   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
 │   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations
