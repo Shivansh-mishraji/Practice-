@@ -67,7 +67,7 @@
 - [x] **SQL FINAL ASSESSMENT: 5/5 Tests Passed** — FK constraints, INNER/LEFT JOINs, ACID transactions, index verification — all integrated in one blank file from memory
 - [x] **ACTIVE NEXT: FastAPI Foundations** (Setup, Routing, Pydantic v2 schemas, Dependency Injection)
 - [x] FastAPI Drill 01: App skeleton, `FastAPI(title, version)`, 3 routes, path parameters `{user_id: int}`, Swagger UI at `/docs`, `--reload` vs production `--workers` internals
-- [ ] FastAPI Drill 02: Pydantic v2 schemas (request body validation, POST endpoint)
+- [x] FastAPI Drill 02: Pydantic v2 `BaseModel` request body validation, `POST /users`, HTTP 422 auto-response, information leakage risk, `RequestValidationError` custom exception handler pattern
 - [ ] FastAPI Drill 03: SQL + FastAPI integration (SQLite-backed endpoints)
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
