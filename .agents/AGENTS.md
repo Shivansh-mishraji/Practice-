@@ -69,7 +69,8 @@
 - [x] FastAPI Drill 01: App skeleton, `FastAPI(title, version)`, 3 routes, path parameters `{user_id: int}`, Swagger UI at `/docs`, `--reload` vs production `--workers` internals
 - [x] FastAPI Drill 02: Pydantic v2 `BaseModel` request body validation, `POST /users`, HTTP 422 auto-response, information leakage risk, `RequestValidationError` custom exception handler pattern
 - [x] FastAPI Drill 03: SQL + FastAPI integration (CRUD routes, `HTTPException(404)` on missing record, HTTP 201 Created with `lastrowid`, `check_same_thread=False` thread-safety)
-- [ ] FastAPI Drill 04: Dependency Injection (`Depends(get_db)`) & Resource Lifecycle
+- [x] FastAPI Drill 04: Dependency Injection (`Depends(get_db)`), Generator Resource Lifecycle (`yield` + `finally: conn.close()`), `response_model=UserResponse` output schema enforcement, `sqlite3.Row` dictionary serialization
+- [ ] **ACTIVE NEXT: PostgreSQL + SQLAlchemy 2.0 + Alembic Migrations**
 - [ ] PostgreSQL + SQLAlchemy + Alembic
 - [ ] pytest + mocking
 - [ ] Docker + docker-compose
