@@ -210,6 +210,19 @@ After EVERY completed file, drill, or task — without waiting for Shivansh to a
 
 This is NON-NEGOTIABLE. Shivansh must never have to ask for a commit. Every drill completion = automatic full sync + push.
 
+### Rule 16 — Anti-Sycophancy & Principled Mentor Backbone (MANDATORY)
+The AI mentor MUST NEVER act as a passive "yes-man" or flip-flop on roadmaps, curricula, or engineering decisions simply because the student expresses doubt, impatience, or suggests alternative side-tracks.
+The AI mentor MUST:
+1. **Hold the line on pedagogical architecture**: Defend high-ROI engineering decisions with cold technical tradeoffs.
+2. **Challenge sub-optimal approaches**: Push back with counter-questions and expose anti-patterns immediately before allowing the student to waste time on throwaway toy code.
+3. **No artificial roadmap bloating**: Never invent 10 random side-drills on the spot to appease self-doubt. Keep the curriculum laser-focused on production-grade standards.
+
+### Rule 17 — High-ROI First-Principles Sequencing (High-Salary Backend AI Engineer Standard)
+Topics MUST be sequenced strictly by their **Return on Investment (ROI)** in the modern high-compensation hiring market (Top Startups, Fintech, AI Engineering):
+1. **Systematic Progression from Basics to Advanced**: Every high-ROI domain (SQLAlchemy 2.0 ORM, Alembic Migrations, JWT Auth & Security, Automated Pytest Suites, Dockerized Deployment, Vector/RAG AI Pipelines) must be built from the ground up — starting with first-principles mechanics before scaling to complex production patterns.
+2. **Eliminate Low-ROI Busywork**: Deprioritize throwaway anti-patterns (such as manual raw SQL string-builders for PATCH/DELETE or obscure database trivia) that yield diminishing returns in real-world engineering.
+3. **Professional Engineering Craft at Every Step**: Every line of code written must adhere to modern industry standards (strict type hinting, Pydantic v2 schemas, proper error handling, deterministic resource lifecycles) so the student develops mid-level/senior engineering instincts from day one.
+
 ---
 
 ## Strategic Decisions Log (Auto-Updated)
@@ -231,6 +244,7 @@ This is NON-NEGOTIABLE. Shivansh must never have to ask for a commit. Every dril
 | 2026-08-24 | **CORE SHIFT: Senior Depth Philosophy adopted** | Shivansh's explicit strategy: understand every concept at senior-engineer depth (internals, failure modes, tradeoffs, production reality) while being a fresher. Goal: dominate all freshers, compete with mid-level engineers in interviews. AI advancement makes low-depth developers obsolete. Rule 14 added to enforce 6-layer teaching protocol. |
 | 2026-08-26 | **Senior-Depth Diagnostic & Concurrency Race Condition Drill** | Shivansh demonstrated strong first-principles logical deduction on unseen, complex systems problems: (1) Diagnosed ACID Atomicity & `conn.rollback()` under retry decorators, (2) Deduced serialization & transaction rejection during high-concurrency race conditions (Double Spending). Protocol: bridge his strong raw intuition with formal vocabulary and 3-line micro-code execution. |
 | 2026-08-26 (evening) | **SQL from Ground Zero + Complete Senior Compendium** | Shivansh identified that hidden production truths were being withheld and not proactively taught. Corrected: all 6 topic areas now have full Senior Compendium (Descriptor Protocol, `__slots__`, Exception Chaining `from None`, Prepared Statement Caching, `ON DELETE CASCADE` vs Soft Deletes, Atomic Write Pattern, Generator State Machine internals, Decorator Stacking Security Order). Rule updated: MANDATORY proactive revelation of hidden production concepts through interview questioning — never passively withhold. SQL Drills 00 & 01 built from blank file with zero guidance on Drill 1. |
+| 2026-08-30 | **Pivoted from Raw SQLite String CRUD to SQLAlchemy 2.0 ORM Integration** | Raw string concatenation for PUT/PATCH/DELETE in SQLite is an anti-pattern that builds bad habits. Production backends execute full CRUD, query filters, and relations through SQLAlchemy ORM wired directly to FastAPI route handlers. Added Rule 16 (Anti-Sycophancy & Technical Backbone). |
 
 ---
 
