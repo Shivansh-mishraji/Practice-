@@ -141,9 +141,9 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - [`Stage-2/FastAPI/main.py`](Stage-2/FastAPI/main.py): FastAPI app skeleton — 3 GET routes, path parameters, Pydantic v2 `BaseModel` request body validation (`POST /users`), automatic HTTP 422 on invalid input, Swagger UI at `/docs`.
 - [`Stage-2/FastAPI/users_api.py`](Stage-2/FastAPI/users_api.py): **SQL + FastAPI Integration** — in-memory SQLite database wired to live REST endpoints (`GET /users`, `GET /users/{id}` with 404 handler, `POST /users` returning HTTP 201 + `lastrowid`), thread-safe connection pooling.
 - [`Stage-2/FastAPI/di_users_api.py`](Stage-2/FastAPI/di_users_api.py): **Dependency Injection & Lifecycle Management** — production pattern using `Depends(get_db)`, generator dependencies (`yield conn` + `finally: conn.close()`), `response_model=UserResponse` schema enforcement, `sqlite3.Row` dictionary mapping.
-- [`Stage-2/SQL/micro_00.py`](Stage-2/SQL/micro_00.py): Initial DDL table creation and cursor management.
-- [`Stage-2/SQL/micro_task_01.py`](Stage-2/SQL/micro_task_01.py): Initial parameterized DML insertions.
-- [`Stage-2/SQL/joins.py`](Stage-2/SQL/joins.py): Relational `INNER JOIN` and `LEFT JOIN` engine queries.
+- [`Stage-2/SQLAlchemy/drill_01_engine_and_model.py`](Stage-2/SQLAlchemy/drill_01_engine_and_model.py): **Engine & Modern Declarative Mapping** — SQLAlchemy 2.0 `DeclarativeBase`, `Mapped[T]`, `mapped_column`, and deterministic path configuration.
+- [`Stage-2/SQLAlchemy/drill_02_session_crud.py`](Stage-2/SQLAlchemy/drill_02_session_crud.py): **Session Lifecycle & Object Queries** — Unit of Work, `session.add_all()`, typed SELECT queries with `select(Model).scalars().all()`.
+- [`Stage-2/SQLAlchemy/drill_03_update_delete.py`](Stage-2/SQLAlchemy/drill_03_update_delete.py): **ORM UPDATE & DELETE** — In-memory dirty tracking, atomic attribute mutations, `session.delete()`, and transactional persistence.
 
 ---
 
@@ -192,12 +192,10 @@ Python-Learning-Journey/
 │   │   ├── main.py             # ✅ Drill 01 & 02 — App skeleton, Pydantic v2 validation, Swagger UI
 │   │   ├── users_api.py        # ✅ Drill 03 — SQL + FastAPI Integration (CRUD, 404s, 201 Created)
 │   │   └── di_users_api.py     # ✅ Drill 04 — Dependency Injection (Depends, generator lifecycle, response_model)
-│   │   ├── micro_00.py         # DB connection & DDL table creation
-│   │   ├── micro_task_01.py    # Parameterized queries & SELECT fetchall
-│   │   └── joins.py            # INNER JOIN and LEFT JOIN implementations
-│   ├── file_io.py              # pathlib & JSON storage utility module
-│   ├── file_io_challenge.py    # Blank-file File I/O capstone challenge
-│   └── sprint-1-capstone.py    # Multi-concept Secure Audit Vault Capstone
+│   └── SQLAlchemy/             # SQLAlchemy 2.0 ORM drills
+│       ├── drill_01_engine_and_model.py  # ✅ DeclarativeBase & Mapped Models
+│       ├── drill_02_session_crud.py      # ✅ Session Lifecycle, add_all, SELECT
+│       └── drill_03_update_delete.py     # ✅ Dirty tracking UPDATE & DELETE
 └── README.md                   # Complete journey documentation
 ```
 

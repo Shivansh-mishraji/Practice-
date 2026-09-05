@@ -70,8 +70,13 @@
 - [x] FastAPI Drill 02: Pydantic v2 `BaseModel` request body validation, `POST /users`, HTTP 422 auto-response, information leakage risk, `RequestValidationError` custom exception handler pattern
 - [x] FastAPI Drill 03: SQL + FastAPI integration (CRUD routes, `HTTPException(404)` on missing record, HTTP 201 Created with `lastrowid`, `check_same_thread=False` thread-safety)
 - [x] FastAPI Drill 04: Dependency Injection (`Depends(get_db)`), Generator Resource Lifecycle (`yield` + `finally: conn.close()`), `response_model=UserResponse` output schema enforcement, `sqlite3.Row` dictionary serialization
-- [ ] **ACTIVE NEXT: PostgreSQL + SQLAlchemy 2.0 + Alembic Migrations**
-- [ ] PostgreSQL + SQLAlchemy + Alembic
+- [x] **ACTIVE: Stage 2 — SQLAlchemy 2.0 ORM Foundations**
+  - [x] SQLAlchemy Drill 01: Engine, DeclarativeBase, Mapped types, `mapped_column`, metadata DDL emission
+  - [x] SQLAlchemy Drill 02: Session context manager, Unit of Work, `session.add_all()`, `select(Model).scalars().all()`
+  - [x] SQLAlchemy Drill 03: ORM UPDATE (Dirty Tracking), DELETE (`session.delete()`), transaction persistence
+- [ ] SQLAlchemy Drill 04: One-to-Many Relationships (`ForeignKey`, `relationship()`, lazy vs joined loading)
+- [ ] SQLAlchemy Drill 05: FastAPI + SQLAlchemy Integration (`Depends(get_db)`, Pydantic v2 schemas, REST CRUD)
+- [ ] PostgreSQL + Alembic Migrations
 - [ ] pytest + mocking
 - [ ] Docker + docker-compose
 - [ ] Deployment (Render/Railway)
