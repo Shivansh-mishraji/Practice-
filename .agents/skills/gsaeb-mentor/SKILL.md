@@ -52,66 +52,54 @@ Always state:
 
 ---
 
-## Topic Sequence (Ordered by Priority)
-
-### Currently Active: Week 1 — Python Core
-
-Next up (in order):
-1. **Decorators** — `@timer`, `@validate_positive`, `functools.wraps`, `*args/**kwargs`
-   - File: `Stage-1/decorators.py`
-   - Why now: Used in every framework. FastAPI routes ARE decorators.
-
-2. **Closures** — LEGB rule, `nonlocal`, stateful functions without classes
-   - File: `Stage-1/closures.py`
-   - Why: Decorators use closures internally. Must understand before Week 4 FastAPI.
-
-3. **Generators** — `yield`, lazy evaluation, memory efficiency, streaming
-   - File: `Stage-1/generators.py`
-   - Why: LLM streaming responses use generators. Critical for AI Engineering.
-
-4. **Type Hints** — `Optional`, `Union`, `list[str]`, `dict[str, Any]`, `Callable`
-   - Apply to ALL existing files retrospectively
-   - Why: Every production codebase requires this. MyPy/Pyright in CI.
-
-### Week 2 — Professional Python
-5. File handling — `pathlib`, JSON read/write, CSV processing
-6. Logging — replace all `print()` with structured logging
-7. Modules and packages — `__init__.py`, relative imports, `src/` layout
-8. Virtual environments — `uv` basics, `pyproject.toml`
-
-### Week 3 — Git + SQL + FastAPI Start
-9. Git branching — feature branches, merge, rebase basics
-10. SQL — JOINs, GROUP BY, subqueries, window functions (intermediate)
-11. FastAPI entry — routes, Pydantic models, dependency injection
-
-### Week 4 — FastAPI Core
-12. FastAPI auth — JWT tokens, OAuth2, protected routes
-13. FastAPI middleware — request logging, CORS, error handling
-14. FastAPI background tasks, file uploads, pagination
-
-### Week 5 — Database Engineering
-15. PostgreSQL — schemas, indexes, transactions
-16. SQLAlchemy — ORM models, sessions, relationships
-17. Alembic — migrations, version control for DB schema
-
-### Week 6 — Quality & Portability
-18. pytest — unit tests, fixtures, parametrize
-19. Mocking — `unittest.mock`, patch, MagicMock
-20. Docker — Dockerfile, docker-compose, environment config
-
-### Week 7 — AI Integration (The Differentiator)
-21. Gemini API — text generation, structured output, streaming
-22. Embeddings — what they are, how to generate, cosine similarity
-23. Vector DB basics — ChromaDB or Qdrant, store + query embeddings
-24. RAG pipeline — chunk → embed → store → retrieve → generate
-
-### Week 8 — Ship and Apply
-25. Deployment — Render/Railway, environment variables, health checks
-26. GitHub Actions — basic CI (lint + test on push)
-27. Portfolio polish — README with demo GIF, API docs, live URL
-28. Resume bullets — quantified impact from project metrics
-
 ---
+
+## Topic Sequence (Ordered by Priority & Spiral Synthesis)
+
+### Stage 1 — Python Core & Advanced OOP (COMPLETED ✅)
+- OOP encapsulation (`_private`, properties, custom exception hierarchies)
+- Decorators (`@wraps`, `*args/**kwargs`, rate limiting, auth guards)
+- Lazy evaluation generators (`yield`, streaming pipelines)
+- File I/O + `pathlib` + Context Managers
+- **Milestone Achieved:** `sprint-1-capstone.py` (7-in-1 Secure Audit Vault)
+
+### Stage 2A — SQL Foundations & Relational Internals (COMPLETED ✅)
+- Parameterized SQL (`?` placeholder defense against SQLi)
+- Foreign Keys, `PRAGMA foreign_keys = ON`, `ON DELETE CASCADE` vs Soft Deletes
+- `INNER JOIN` vs `LEFT JOIN` (orphan detection)
+- ACID Transactions, Atomic Balance Guards, `conn.rollback()`
+- B-Tree Indexes & `EXPLAIN QUERY PLAN` (`SCAN` vs `SEARCH USING INDEX`)
+- **Milestone Achieved:** `sql_final_assesment.py` (5/5 tests passed from blank file)
+
+### Stage 2B — SQLAlchemy 2.0 ORM & FastAPI Integration (ACTIVE 🔥)
+1. **SQLAlchemy 2.0 Engine & Models** (`drill_01_engine_and_model.py`) — ✅ Completed
+2. **Session Lifecycle & Unit of Work** (`drill_02_session_crud.py`) — ✅ Completed
+3. **ORM UPDATE (Dirty Tracking) & DELETE** (`drill_03_update_delete.py`) — ✅ Completed
+4. **One-to-Many Relationships & Query Efficiency** (`drill_04_relationships.py`) — **NEXT**
+   - `ForeignKey`, `relationship()`, `back_populates`, cascading deletes
+   - Lazy loading (`lazy="select"`) vs Joined loading (`joinedload()`)
+   - N+1 query problem diagnosis and senior-depth mitigation
+5. **FastAPI + SQLAlchemy DI Integration** (`drill_05_fastapi_orm.py`)
+   - Generator dependency `get_db()` yielding `Session`
+   - Pydantic v2 schemas (`from_attributes=True`)
+   - Full REST CRUD with proper HTTP status codes (201, 204, 404, 422)
+
+### Stage 2 Grand Capstone — Spiral Synthesis REST API (MANDATORY GATEWAY)
+- **Production Store API from Blank File**:
+  - Synthesizes ALL prior layers: Custom exceptions, `@timer` / auth decorators, Pydantic v2 schemas, SQLAlchemy 2.0 relational models, session dependency injection, and clean REST endpoints.
+  - Zero reference code allowed. Must run and pass automated verification.
+
+### Stage 3 — Production Persistence & Testing
+- PostgreSQL (local/Dockerized) + Alembic schema migrations (`alembic init`, `autogenerate`, `upgrade head`)
+- Testing with `pytest` + fixtures + DB rollback isolation + HTTP test client
+
+### Stage 4 — DevOps & Containerization
+- Dockerfile multi-stage builds + `docker-compose.yml` (FastAPI + PostgreSQL + pgvector)
+- Cloud deployment (Render/Railway), health check endpoints, structured JSON logging
+
+### Stage 5 — Portfolio Flagship: AI Resume & JD Analyzer
+- Real AI Engineering (not toy wrappers): Gemini API, vector embeddings, cosine similarity search, chunking strategy, background evaluation tasks.
+
 
 ## AI Tool Integration Rules
 
