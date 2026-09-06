@@ -24,9 +24,14 @@
 
 ## 📌 Executive Summary
 
-This repository chronicles my step-by-step progression from foundational Python principles to production-level backend engineering, relational database modeling, and scalable API development.
+This repository chronicles an intensive, industry-calibrated journey toward mastering production-grade backend engineering, relational database internals, and scalable AI systems.
 
-Rather than relying on passive tutorials or surface-level code copying, every concept here was mastered through **blank-file challenges**, **system failure analysis**, and **senior-level code reviews**.
+**The Mission**: Build senior-level engineering depth as an undergraduate to dominate technical screens, excel during internships, and secure a **Pre-Placement Offer (PPO) before 4th Year** at a top-tier product company or high-paying startup (₹8–25 LPA / $20k–$50k USD remote).
+
+Rather than relying on passive tutorials, toy scripts, or surface-level copy-pasting:
+- **Zero Toy Topics**: Strict adherence to enterprise production tools (SQLAlchemy 2.0 ORM, Alembic migrations, PostgreSQL, FastAPI, Pydantic v2, Docker, pytest, Vector RAG) instead of throwaway abstractions.
+- **Spiral Synthesis**: Continuous forward progression paired with cumulative active recall. Every major milestone culminates in an **Integrated Capstone** built from a blank slate without starter code.
+- **Senior-Depth Rigor**: Understanding every layer from first principles — failure modes, concurrency, data integrity, N+1 query bottlenecks, and deterministic resource lifecycles.
 
 ---
 
@@ -36,12 +41,13 @@ Rather than relying on passive tutorials or surface-level code copying, every co
   <img src="assets/roadmap.jpg" alt="Backend AI Engineering Roadmap" width="100%" style="border-radius: 12px;" />
 </p>
 
-| Stage | Focus Area | Key Concepts | Status |
+| Stage | Focus Area | Key Concepts & Industry Deliverables | Status |
 |:---|:---|:---|:---:|
-| **Stage 1** | **Python Core & Advanced OOP** | Encapsulation, `@property` validation, Custom Exceptions, Decorators (`@wraps`), Generators (`yield` pipelines), Data Structures | **✅ Completed** |
-| **Stage 2** | **File I/O, SQL & FastAPI** | `pathlib`, Context Managers, JSON serialization, Relational Modeling, Parameterized SQL, `JOINs`, FastAPI setup | **🔥 Active** |
-| **Stage 3** | **Production APIs & Databases** | FastAPI routing, Pydantic v2 schemas, Dependency Injection, Middleware, SQLAlchemy ORM, PostgreSQL migrations (Alembic) | **⏳ Upcoming** |
-| **Stage 4** | **Testing, Docker & AI Integration** | `pytest` + mocking, Docker + `docker-compose`, Gemini API integration, Vector embeddings, Cloud deployment (Render/Railway) | **⏳ Upcoming** |
+| **Stage 1** | **Python Core & Advanced Systems** | Encapsulation, `@property` validation, Custom Exceptions, Decorators (`@wraps`), Generators (`yield` pipelines), Typing | **✅ Mastered** |
+| **Stage 2** | **Relational SQL, SQLAlchemy 2.0 ORM & FastAPI** | Relational Modeling, Parameterized SQL, B-Tree Indexes, SQLAlchemy 2.0 DeclarativeBase, Session Unit of Work, Relationships, FastAPI DI | **🔥 Active** |
+| **Grand Capstone** | **Stage 2 Blank-Slate Production API** | **Full Store REST API**: FastAPI + SQLAlchemy 2.0 + Pydantic v2 + Custom Exceptions + Decorators + Multi-Table Relations | **⏳ Next** |
+| **Stage 3** | **PostgreSQL, Alembic Migrations & Testing** | PostgreSQL engine, version-controlled migrations (Alembic), automated testing with `pytest`, fixtures, and DB rollback isolation | **⏳ Upcoming** |
+| **Stage 4** | **Docker, Cloud DevOps & Production AI** | Multi-stage Docker, `docker-compose`, Gemini API, vector embeddings, pgvector/ChromaDB RAG pipeline, Cloud deployment | **⏳ Upcoming** |
 
 ---
 
@@ -144,19 +150,24 @@ Step 1: OOP & Encapsulation ──► Step 2: Decorators & Streams ──► Ste
 - [`Stage-2/SQLAlchemy/drill_01_engine_and_model.py`](Stage-2/SQLAlchemy/drill_01_engine_and_model.py): **Engine & Modern Declarative Mapping** — SQLAlchemy 2.0 `DeclarativeBase`, `Mapped[T]`, `mapped_column`, and deterministic path configuration.
 - [`Stage-2/SQLAlchemy/drill_02_session_crud.py`](Stage-2/SQLAlchemy/drill_02_session_crud.py): **Session Lifecycle & Object Queries** — Unit of Work, `session.add_all()`, typed SELECT queries with `select(Model).scalars().all()`.
 - [`Stage-2/SQLAlchemy/drill_03_update_delete.py`](Stage-2/SQLAlchemy/drill_03_update_delete.py): **ORM UPDATE & DELETE** — In-memory dirty tracking, atomic attribute mutations, `session.delete()`, and transactional persistence.
+- `Stage-2/SQLAlchemy/drill_04_relationships.py`: **One-to-Many Relationships & Query Optimization** — `ForeignKey`, `relationship()`, `back_populates`, cascading deletes, and N+1 query diagnosis via joined eager loading (`joinedload`). *(Next)*
+- `Stage-2/SQLAlchemy/drill_05_fastapi_orm.py`: **FastAPI + SQLAlchemy DI Integration** — Generator dependency injection `get_db()`, Pydantic v2 serialization (`from_attributes=True`), and full REST CRUD. *(Upcoming)*
+- `Stage-2/stage_2_grand_capstone.py`: **Stage 2 Grand Capstone: Production Store REST API** — Blank-slate synthesis of Custom Exceptions, Decorators, Pydantic v2, SQLAlchemy 2.0 ORM, and FastAPI endpoints. *(Milestone Gateway)*
 
 ---
 
-## 🛠️ Technical Stack & Tooling
+## 🛠️ Technical Stack & Production Tooling
 
 ```
-Core Language    : Python 3.13+
-Backend API      : FastAPI, Pydantic v2 (Active/Upcoming)
-Databases        : SQLite (In-Memory & File), PostgreSQL (Upcoming)
-Architecture     : Modular Clean Architecture (Routes, Services, Schemas)
-File Operations  : pathlib, Context Managers, JSON Serialization
-DevOps & Tooling : Git (Conventional Commits), VS Code, Antigravity IDE
-AI Integration   : Google Gemini API (In Progress)
+Core Language     : Python 3.13+ (Strict Type Hints, Generator Pipelines, Functional Decorators)
+Web Framework     : FastAPI (Async Route Handlers, Dependency Injection, Centralized Exception Middleware)
+ORM & Persistence : SQLAlchemy 2.0 (Unit of Work, Dirty Tracking, Eager Loading vs Lazy Loading)
+Database Engines  : PostgreSQL (Production Target), SQLite (Local Isolation), ACID Relational Integrity
+Schema Migrations : Alembic (Zero-Downtime Versioned Migrations — Upcoming)
+Data Validation   : Pydantic v2 (Request Sanitization, Response Schema Serialization)
+Testing & Quality : pytest, fixtures, DB rollback isolation, mock interfaces (Upcoming)
+DevOps & Deploy   : Docker (Multi-stage builds), docker-compose, GitHub Actions CI (Upcoming)
+AI Engineering    : Google Gemini API, Vector Embeddings, pgvector/ChromaDB RAG Pipelines (Upcoming)
 ```
 
 ---
@@ -173,13 +184,13 @@ Python-Learning-Journey/
 │   ├── step2_pipeline.jpg      # Step 2: Decorators & Stream Pipeline visual
 │   ├── step3_vault.jpg         # Step 3: Secure Audit Vault Capstone visual
 │   └── step4_sql_ai.jpg        # Step 4: Relational SQL & AI Architecture visual
-├── Stage-1/                    # Stage 1: Python Core Mastery
+├── Stage-1/                    # Stage 1: Python Core Mastery (COMPLETED)
 │   ├── projects/               # Capstone implementations (vault, bank, catalog, generator)
 │   ├── practice/               # Blank-file re-implementation proofs
 │   ├── interview/              # RateLimiter, require_auth, APIResponse drills
 │   ├── Assessment/             # Self-assessment verification tests
 │   └── DSA/                    # Data Structures & Algorithms track (HashMap Two Sum O(n))
-├── Stage-2/                    # Stage 2: File I/O, SQL & FastAPI
+├── Stage-2/                    # Stage 2: Relational SQL, SQLAlchemy 2.0 ORM & FastAPI (ACTIVE)
 │   ├── SQL/                    # Relational SQL drills (DDL, parameterized DML, FK constraints, JOINs, ACID, Indexes)
 │   │   ├── sql_drill_00.py     # ✅ DDL from blank file — CREATE TABLE, sqlite_master
 │   │   ├── sql_drill_01.py     # ✅ Parameterized INSERT & SELECT — first-try pass
@@ -188,14 +199,17 @@ Python-Learning-Journey/
 │   │   ├── sql_drill_04.py     # ✅ ACID Transactions, Atomic Balance Guards, ROLLBACK handling
 │   │   ├── sql_drill_05.py         # ✅ B-Tree Indexes & EXPLAIN QUERY PLAN (SCAN vs SEARCH)
 │   │   ├── sql_final_assesment.py  # ✅ SQL FINAL ASSESSMENT — 5/5 tests, all concepts integrated
+│   │   └── joins.py            # Relational set-matching engine
 │   ├── FastAPI/                # FastAPI REST API drills
 │   │   ├── main.py             # ✅ Drill 01 & 02 — App skeleton, Pydantic v2 validation, Swagger UI
 │   │   ├── users_api.py        # ✅ Drill 03 — SQL + FastAPI Integration (CRUD, 404s, 201 Created)
 │   │   └── di_users_api.py     # ✅ Drill 04 — Dependency Injection (Depends, generator lifecycle, response_model)
-│   └── SQLAlchemy/             # SQLAlchemy 2.0 ORM drills
+│   └── SQLAlchemy/             # SQLAlchemy 2.0 ORM drills (High-ROI Production ORM)
 │       ├── drill_01_engine_and_model.py  # ✅ DeclarativeBase & Mapped Models
 │       ├── drill_02_session_crud.py      # ✅ Session Lifecycle, add_all, SELECT
-│       └── drill_03_update_delete.py     # ✅ Dirty tracking UPDATE & DELETE
+│       ├── drill_03_update_delete.py     # ✅ Dirty tracking UPDATE & DELETE
+│       ├── drill_04_relationships.py     # ⏳ 1-to-Many Relationships & N+1 Problem (NEXT)
+│       └── drill_05_fastapi_orm.py       # ⏳ FastAPI + SQLAlchemy DI Integration
 └── README.md                   # Complete journey documentation
 ```
 
@@ -213,11 +227,11 @@ cd Python-Learning-Journey
 # Run Stage 2 Capstone (Secure Audit Vault - 7 Concepts Integrated)
 python Stage-2/sprint-1-capstone.py
 
+# Run SQLAlchemy ORM Dirty Tracking & Persistence Drill
+python Stage-2/SQLAlchemy/drill_03_update_delete.py
+
 # Run SQL Relational JOINs Engine
 python Stage-2/SQL/joins.py
-
-# Run File I/O Challenge
-python Stage-2/file_io_challenge.py
 
 # Run Lazy Log Stream Generator
 python Stage-1/projects/generator.py
@@ -229,9 +243,11 @@ python Stage-1/projects/generator.py
 
 1. **Explicit Type Annotations:** Strict typing on all signatures using `Optional`, `Union`, `Callable`, `Generator`.
 2. **Never Mask Exceptions:** Domain-specific exceptions raised explicitly instead of generic `print()` statements.
-3. **Deterministic Resource Safety:** Context managers (`with`) mandatory for all I/O and database operations to guarantee leak-free cleanup.
+3. **Deterministic Resource Safety:** Context managers (`with`) mandatory for all I/O, database sessions, and connections to guarantee leak-free cleanup.
 4. **Verified Mastery:** Every concept proven by writing working implementations from a completely blank file without starter code.
 5. **Senior Depth Standard:** Every concept mastered at production-engineer depth — internals, failure modes, tradeoffs, and real-world implications — not just surface-level API usage.
+6. **Zero Toy Distractions:** Strict focus on enterprise-standard tools (SQLAlchemy 2.0, PostgreSQL, Alembic, Docker, pytest) that deliver direct leverage in technical rounds and high-paying jobs.
+7. **Spiral Synthesis & Active Recall:** Continuous forward progression reinforced by periodic blank-slate integrated capstones and unannounced spaced retrieval challenges.
 
 ---
 

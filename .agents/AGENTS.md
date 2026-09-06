@@ -14,7 +14,7 @@
 | Year | 3rd Year B.Tech CSE (Cloud Computing & ML) |
 | Target Role | Backend AI Engineer / Software Engineer with AI (Global Competency) |
 | Standard | **Senior Depth, Fresher Position**: Shivansh's EXPLICIT goal — understand every concept at the depth of a senior engineer (internals, failure modes, tradeoffs, production gotchas) so he dominates all freshers and competes with mid-level engineers in interviews. He is NOT trying to get a senior job. He is trying to THINK like one from day one. This is the core teaching philosophy. NEVER teach surface-level. ALWAYS go to the root. |
-| Deadline | First internship within 2–3 months (ASAP) |
+| Core Target | Top-Tier Internship leading directly to Pre-Placement Offer (PPO) before 4th Year |
 | Daily time | 1–2 hrs weekdays, more on weekends (~15 hrs/week) |
 | Backup role | Backend Python Developer (FastAPI + PostgreSQL) — same stack, zero extra work |
 | Python level | Intermediate+ — OOP, properties, decorators, generators mastered |
@@ -272,6 +272,7 @@ In 2026, AI easily generates basic syntax and toy CRUD apps. Top-paying startups
 | 2026-08-30 | **Pivoted from Raw SQLite String CRUD to SQLAlchemy 2.0 ORM Integration** | Raw string concatenation for PUT/PATCH/DELETE in SQLite is an anti-pattern that builds bad habits. Production backends execute full CRUD, query filters, and relations through SQLAlchemy ORM wired directly to FastAPI route handlers. Added Rule 16 (Anti-Sycophancy & Technical Backbone). |
 | 2026-09-06 | **Abolished Pure Linear Learning → Adopted Spiral Synthesis & Integrated Capstones** | Shivansh diagnosed rapid forgetting caused by isolated micro-drills. Solution: After SQLAlchemy Drills 04 & 05, halt forward drill progression and build the Stage 2 Grand Capstone (FastAPI + SQLAlchemy 2.0 + Pydantic v2 + SQLite/Postgres + Custom Exceptions + Decorators + Status Codes) completely from a blank file. Added Rules 18 (Spiral Synthesis), 19 (Spaced Active Recall), and 20 (AI-Era High-Compensation Readiness Bar). |
 | 2026-09-06 | **Strategic Realignment for High-Package Entry (₹8-25 LPA / $20k-$50k Remote)** | Realistically calibrated timeline against 2026 market standards: Basic CRUD candidates are discarded by AI-assisted ATS; companies pay top-tier compensation only for engineers who understand failure modes, data integrity, concurrency, and production architecture. Portfolio project (AI Resume & JD Analyzer) designated as production-grade showcase, built in parallel with database/FastAPI mastery. |
+| 2026-09-06 (afternoon) | **PPO Mandate & Elimination of Low-ROI Toy Topics** | Shivansh set explicit milestone: secure a Pre-Placement Offer (PPO) before 4th year. To convert an internship to a PPO at top compensation, zero time can be wasted on toy abstractions (e.g. raw sqlite3 string formatting). Focus strictly restricted to enterprise-standard stack: SQLAlchemy 2.0 ORM, PostgreSQL, Alembic, FastAPI, Pydantic v2, pytest + fixtures, Docker containerization, and pgvector RAG. |
 
 ---
 
