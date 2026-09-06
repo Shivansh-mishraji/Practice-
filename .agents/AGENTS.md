@@ -74,7 +74,7 @@
   - [x] SQLAlchemy Drill 01: Engine, DeclarativeBase, Mapped types, `mapped_column`, metadata DDL emission
   - [x] SQLAlchemy Drill 02: Session context manager, Unit of Work, `session.add_all()`, `select(Model).scalars().all()`
   - [x] SQLAlchemy Drill 03: ORM UPDATE (Dirty Tracking), DELETE (`session.delete()`), transaction persistence
-  - [ ] SQLAlchemy Drill 04: One-to-Many Relationships (`ForeignKey`, `relationship()`, lazy vs joined loading & N+1 problem)
+  - [x] SQLAlchemy Drill 04: One-to-Many Relationships (`ForeignKey`, `relationship()`, `back_populates`, Unit of Work cascade)
   - [ ] SQLAlchemy Drill 05: FastAPI + SQLAlchemy Integration (`Depends(get_db)`, Pydantic v2 schemas, REST CRUD)
 - [ ] **Stage 2 Grand Capstone: Production Integrated API** (FastAPI + SQLAlchemy 2.0 ORM + Pydantic v2 + Custom Exceptions + Decorators + Relational Queries — built from a blank slate)
 - [ ] PostgreSQL + Alembic Migrations
@@ -273,6 +273,7 @@ In 2026, AI easily generates basic syntax and toy CRUD apps. Top-paying startups
 | 2026-09-06 | **Abolished Pure Linear Learning → Adopted Spiral Synthesis & Integrated Capstones** | Shivansh diagnosed rapid forgetting caused by isolated micro-drills. Solution: After SQLAlchemy Drills 04 & 05, halt forward drill progression and build the Stage 2 Grand Capstone (FastAPI + SQLAlchemy 2.0 + Pydantic v2 + SQLite/Postgres + Custom Exceptions + Decorators + Status Codes) completely from a blank file. Added Rules 18 (Spiral Synthesis), 19 (Spaced Active Recall), and 20 (AI-Era High-Compensation Readiness Bar). |
 | 2026-09-06 | **Strategic Realignment for High-Package Entry (₹8-25 LPA / $20k-$50k Remote)** | Realistically calibrated timeline against 2026 market standards: Basic CRUD candidates are discarded by AI-assisted ATS; companies pay top-tier compensation only for engineers who understand failure modes, data integrity, concurrency, and production architecture. Portfolio project (AI Resume & JD Analyzer) designated as production-grade showcase, built in parallel with database/FastAPI mastery. |
 | 2026-09-06 (afternoon) | **PPO Mandate & Elimination of Low-ROI Toy Topics** | Shivansh set explicit milestone: secure a Pre-Placement Offer (PPO) before 4th year. To convert an internship to a PPO at top compensation, zero time can be wasted on toy abstractions (e.g. raw sqlite3 string formatting). Focus strictly restricted to enterprise-standard stack: SQLAlchemy 2.0 ORM, PostgreSQL, Alembic, FastAPI, Pydantic v2, pytest + fixtures, Docker containerization, and pgvector RAG. |
+| 2026-09-06 (evening) | **SQLAlchemy Drill 04 Mastered (One-to-Many Relationships & Unit of Work)** | Shivansh implemented bidirectional mapping (ForeignKey, relationship, back_populates), Unit of Work cascade insertion, and verified bidirectional back-links. Explored systems-level architecture: ephemeral cloud container disks vs managed PostgreSQL, concurrency row-locking vs table-locking, and why JSON files fail under multi-user production workloads. |
 
 ---
 
